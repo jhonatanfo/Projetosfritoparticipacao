@@ -1,0 +1,14 @@
+<section class="content-data">
+    <app-card-long [cardId]='cardId' [bgCard]='bgCardLong1' [svgLogo]='svgCardLong1' [cardTitle]='titleCardLong1'
+        [cardText]='textCardLong1'></app-card-long>
+
+    <app-card-mini *ngFor="let card of cardsGroup1" [svgIcon]='card.icon' [btnTitle]='card.title'></app-card-mini>
+
+    <div style="clear: both;"></div>
+
+    <app-card-long [cardId]='cardId2' [bgCard]='bgCardLong2' [svgLogo]='svgCardLong2' [cardTitle]='titleCardLong2'
+        [cardText]='textCardLong2'></app-card-long>
+
+    <app-card-mini *ngFor="let card of cardsGroup2" [svgIcon]='card.icon' [btnTitle]='card.title'
+        [hasLink]='card.hasLink'></app-card-mini>
+</section>

@@ -1,0 +1,13 @@
+<div *ngIf="svgIcon != 'assets/svg/google.svg'" class="cont">
+    <div class="card-mini">
+        <img [src]="svgIcon" class="icon">
+        <span class='btn-name' [innerHtml]="btnTitle"></span>
+        <i *ngIf="hasLink" class="link"></i>
+    </div>
+</div>
+
+<div *ngIf="svgIcon === 'assets/svg/google.svg'" class="cont" #onlyIcon>
+    <div class="card-mini">
+        <img [src]="svgIcon" class="icon-only">
+    </div>
+</div>

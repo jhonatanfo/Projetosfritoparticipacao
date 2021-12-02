@@ -1,0 +1,58 @@
+.card-mini {
+  width: calc(50% - 9px);
+  position: relative;
+  height: 60px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.16);
+  border: solid 0.5px #f0f1f5;
+  background-color: #ffffff;
+  float: left;
+
+  margin-right: 4px;
+  margin-left: 4px;
+  margin-bottom: 24px;
+}
+
+.cont {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.icon {
+  height: 20px;
+  width: 35px;
+  margin: 20px 10px;
+}
+
+.icon-only {
+  margin: 0 auto;
+  height: 60px;
+  width: 70px;
+  display: block;
+}
+
+.btn-name {
+  float: right;
+  font-size: 12px;
+  width: calc(100% - 56px);
+  margin-top: 15px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+  text-align: left;
+  color: #5b5b5b;
+  height: 28px;
+  align-items: center;
+  display: flex;
+}
+
+.link {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%229.955%22%20height%3D%229.955%22%20viewBox%3D%220%200%209.955%209.955%22%3E%0D%0A%20%20%3Cg%20id%3D%22Grupo_6074%22%20data-name%3D%22Grupo%206074%22%20transform%3D%22translate%2811350.21%2017516.094%29%22%3E%0D%0A%20%20%20%20%3Cg%20id%3D%22Grupo_6070%22%20data-name%3D%22Grupo%206070%22%20transform%3D%22translate%28-11349.71%20-17515.387%29%22%3E%0D%0A%20%20%20%20%20%20%3Cpath%20id%3D%22Stroke_5244%22%20data-name%3D%22Stroke%205244%22%20d%3D%22M8.748%2C6.562v.687a1.5%2C1.5%2C0%2C0%2C1-1.5%2C1.5H1.5A1.5%2C1.5%2C0%2C0%2C1%2C0%2C7.248V1.5A1.5%2C1.5%2C0%2C0%2C1%2C1.5%2C0h.657%22%20transform%3D%22translate%280%200%29%22%20fill%3D%22none%22%20stroke%3D%22%233b69ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%221%22/%3E%0D%0A%20%20%20%20%20%20%3Cpath%20id%3D%22Stroke_5246%22%20data-name%3D%22Stroke%205246%22%20d%3D%22M0%2C0H3.644V3.69%22%20transform%3D%22translate%285.104%200%29%22%20fill%3D%22none%22%20stroke%3D%22%233b69ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%221%22/%3E%0D%0A%20%20%20%20%20%20%3Cpath%20id%3D%22Stroke_5248%22%20data-name%3D%22Stroke%205248%22%20d%3D%22M5.727%2C0%2C0%2C5.728%22%20transform%3D%22translate%283.021%200%29%22%20fill%3D%22none%22%20stroke%3D%22%233b69ff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%221%22/%3E%0D%0A%20%20%20%20%3C/g%3E%0D%0A%20%20%3C/g%3E%0D%0A%3C/svg%3E%0D%0A");
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 10px;
+  width: 10px;
+  right: 5px;
+  top: 5px;
+}

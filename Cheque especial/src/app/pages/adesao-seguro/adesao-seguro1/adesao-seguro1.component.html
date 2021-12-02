@@ -1,0 +1,113 @@
+<div class="content">
+    <h1 class="title">Contratação do cheque especial</h1>
+    <span class="sub-title">
+        Cheque especial é um limite de crédito liberado em sua conta-corrente pra cobrir situações de emergência.
+    </span>
+
+    <div class="data-txt">
+        <p>
+            Valor pré-aprovado <br>
+            <b>R$ 1.500</b>
+        </p>
+
+        <p>
+            Taxa de juros efetiva<br>
+            <b>XX,XX% ao mês | XX,XX% ao ano</b>
+        </p>
+    </div>
+
+    <!-- <div class="collapse">
+        <span (click)="collapse($event)">
+            Pagamentos a autorizar
+        </span>
+        <i class="icon"></i>
+
+        <div class="collapse-content none">
+            <div class="data-txt">
+                <p>
+                    Tributos <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Seguros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Tarifas <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Serviços Terceiros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Registros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Total <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    CET – Custo Efetivo Total: <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <small>
+                    O Custo Efetivo Total (CET) representa a taxa de juros acrescida dos tributos, tarifas, seguros e
+                    demais despesas previstas na operação contratada e os respectivos percentuais de cada componente do
+                    fluxo da operação, que foram calculados com base no valor total concedido no ato da contratação
+                    desta operação.
+                </small>
+            </div>
+        </div>
+        <hr>
+    </div> -->
+
+    <div class="check-style">
+        <input type="checkbox" name="checkbox" id="check1">
+        <label for="check1"></label>
+        <!-- <span>Seguro proteção financeira</span> -->
+        <span class="alinha-line">Quero contar com o seguro proteção financeira</span>
+    </div>
+
+    <div class="data-txt">
+        <p>
+            Valor mensal* <br>
+            <b>R$ 5</b>
+        </p>
+
+        <small>
+            * Este valor é cobrado mesmo que você não use
+            o cheque especial.
+        </small>
+    </div>
+
+    <div class="collapse">
+        <span (click)="collapse($event)" title="Conheça os benefícios">
+            Conheça os benefícios
+        </span>
+        <i class="icon"></i>
+
+        <div class="collapse-content none">
+            <div class="data-txt">
+                <small>
+                    Garante o pagamento do valor da operação de acordo com o limite de crédito contratado, seja para
+                    cobertura de morte, invalidez permanente total por acidente, desemprego involuntário ou incapacidade
+                    física total temporária. O valor do seguro será cobrado mensalmente em sua conta-corrente.
+                </small>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <btn btnClass="btn-red" title="Continuar" (click)="continuar($event)" [btnConfirmText]="btnContinueText" [btnBackText]="btnBackText"
+        activeBack="true"></btn>
+
+</div>

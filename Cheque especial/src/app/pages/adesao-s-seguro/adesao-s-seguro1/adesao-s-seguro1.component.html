@@ -1,0 +1,77 @@
+<div class="content">
+    <h1 class="title">Contratação do limite de cheque especial</h1>
+    <span class="sub-title">
+        Cheque especial é um limite de crédito liberado em sua conta-corrente pra cobrir situações de emergência.
+    </span>
+
+    <div class="data-txt">
+        <p>
+            Valor pré-aprovado <br>
+            <b>R$ 1.500</b>
+        </p>
+
+        <p>
+            Taxa de juros efetiva<br>
+            <b>XX,XX% ao mês | XX,XX% ao ano</b>
+        </p>
+    </div>
+
+    <div class="collapse">
+        <span (click)="collapse($event)" title="Pagamentos a autorizar">
+            Pagamentos a autorizar
+        </span>
+        <i class="icon"></i>
+
+        <div class="collapse-content none">
+            <div class="data-txt">
+                <p>
+                    Tributos <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Seguros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Tarifas <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Serviços Terceiros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Registros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Total <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    CET – Custo Efetivo Total: <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <small>
+                    O Custo Efetivo Total (CET) representa a taxa de juros acrescida dos tributos, tarifas, seguros e
+                    demais despesas previstas na operação contratada e os respectivos percentuais de cada componente do
+                    fluxo da operação, que foram calculados com base no valor total concedido no ato da contratação
+                    desta operação.
+                </small>
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="btns">
+        <btn btnClass="btn-red" (click)="continuar($event)" title="Continuar" [btnConfirmText]="btnContinueText" [btnBackText]="btnBackText" activeBack="true"></btn>
+    </div>
+
+</div>

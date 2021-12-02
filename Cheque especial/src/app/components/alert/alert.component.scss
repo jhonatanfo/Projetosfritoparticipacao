@@ -1,0 +1,78 @@
+#alert {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 16px;
+  display: block;
+  padding: 16px 0;
+
+  span {
+    padding-left: 60px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #47484c;
+    display: block;
+    padding-right: 16px;
+  }
+
+  small {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 4px;
+    display: block;
+    padding-left: 60px;
+    padding-right: 16px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: left;
+  }
+
+
+  &.warning {
+    background: #fefbd5;
+
+    .icon {
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2229.862%22%20height%3D%2225.8%22%20viewBox%3D%220%200%2029.862%2025.8%22%3E%3Cg%20transform%3D%22translate%28-39.069%20-320.1%29%22%3E%3Cg%20transform%3D%22translate%2840%20321%29%22%3E%3Cpath%20d%3D%22M11.024%2C24H2.239A2.157%2C2.157%2C0%2C0%2C1%2C.308%2C20.757L12.284.962a2.011%2C2.011%2C0%2C0%2C1%2C3.432%2C0L27.692%2C20.757A2.157%2C2.157%2C0%2C0%2C1%2C25.76%2C24H17.024%22%20fill%3D%22none%22%20stroke%3D%22%23ffbc00%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%221.8%22/%3E%3Cpath%20d%3D%22M.5%2C0V8.739%22%20transform%3D%22translate%2813.5%206.011%29%22%20fill%3D%22none%22%20stroke%3D%22%23ffbc00%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%221.8%22/%3E%3Cpath%20d%3D%22M2.169%2C1.082A1.085%2C1.085%2C0%2C1%2C1%2C1.085%2C0%2C1.083%2C1.083%2C0%2C0%2C1%2C2.169%2C1.082%22%20transform%3D%22translate%2812.915%2017.918%29%22%20fill%3D%22%23edba2c%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 26px;
+      margin-top: 0px;
+      margin-left: 16px;
+      position: absolute;
+    }
+  }
+
+  &.success {
+    background: #d8f5d8;
+
+    span {
+      padding-left: 60px;
+      font-size: 16px;
+      font-weight: 600;
+      color: #000000;
+      display: block;
+      padding-right: 16px;
+      padding-top: 8px;
+    }
+
+    .icon {
+      background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cg%20transform%3D%22translate%28-930%201018%29%22%3E%3Cg%20transform%3D%22translate%28930%20-1018%29%22%3E%3Cg%20transform%3D%22translate%285%205%29%22%3E%3Cpath%20d%3D%22M0%2C9.051l5.014%2C5.331a2.053%2C2.053%2C0%2C0%2C0%2C3.03%2C0L21.571%2C0%22%20transform%3D%22translate%284.333%206.378%29%22%20fill%3D%22none%22%20stroke%3D%22%230bcc56%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%222.4%22/%3E%3Cpath%20d%3D%22M0%2C17.143v-15A2.143%2C2.143%2C0%2C0%2C1%2C2.143%2C0H27.857A2.143%2C2.143%2C0%2C0%2C1%2C30%2C2.143V21.376%22%20transform%3D%22translate%280%200%29%22%20fill%3D%22none%22%20stroke%3D%22%230bcc56%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%222.4%22/%3E%3Cpath%20d%3D%22M11.754%2C12.857H2.143A2.143%2C2.143%2C0%2C0%2C1%2C0%2C10.714V0%22%20transform%3D%22translate%280%2017.143%29%22%20fill%3D%22none%22%20stroke%3D%22%230bcc56%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%222.4%22/%3E%3Cpath%20d%3D%22M11.818%2C0V6.481A2.143%2C2.143%2C0%2C0%2C1%2C9.675%2C8.624H0%22%20transform%3D%22translate%2818.182%2021.376%29%22%20fill%3D%22none%22%20stroke%3D%22%230bcc56%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-miterlimit%3D%2210%22%20stroke-width%3D%222.4%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      width: 30px;
+      height: 30px;
+      background-size: contain;
+      margin-top: 0px;
+      margin-left: 16px;
+      position: absolute;
+    }
+  }
+}
+
+.title-semiBold {
+  span {
+    font-weight: 600 !important;
+    font-size: 16px !important;
+  }
+}

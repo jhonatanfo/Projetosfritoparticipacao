@@ -1,0 +1,85 @@
+<div class="adesao">
+    <alert [type]="alertTypeSuccess" [txtAlert]="txtAlertSuccess" [txtDesc]="descAlertSuccess"></alert>
+</div>
+
+<div class="content">
+    <div class="data-txt">
+        <p>
+            Valor do novo limite <br>
+            <b>R$ 2.500</b>
+        </p>
+
+        <p>
+            Novo valor do seguro <br>
+            <b>R$ 6</b>
+        </p>
+
+        <p>
+            Taxa de juros efetiva<br>
+            <b>XX,XX% ao mês  | XX,XX% ao ano</b>
+        </p>
+    </div>
+
+    <div class="collapse">
+        <span (click)="collapse($event)" title="Pagamentos autorizados">
+            Pagamentos autorizados
+        </span>
+        <i class="icon"></i>
+
+        <div class="collapse-content none">
+            <div class="data-txt">
+                <p>
+                    Tributos <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Seguros <br>
+                    <b>R$9.999.999,99 |  XX,XX% </b>
+                </p>
+
+                <p>
+                    Tarifas <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Serviços Terceiros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Registros <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    Total <br>
+                    <b>R$9.999.999,99 |  XX,XX%</b>
+                </p>
+
+                <p>
+                    CET – Custo Efetivo Total: <br>
+                    <b>XX,XX% ao mês  | XX,XX% ao ano</b>
+                </p>
+
+                <small>
+                    O Custo Efetivo Total (CET) representa a taxa de juros acrescida dos tributos, tarifas, seguros e
+                    demais despesas previstas na operação contratada e os respectivos percentuais de cada componente do
+                    fluxo da operação, que foram calculados com base no valor total concedido no ato da contratação
+                    desta operação. 
+                </small>
+
+            </div>
+        </div>
+        <hr>
+    </div>
+
+    <div class="btn-visualizar">
+        <i class="icon"></i>
+        <span>Visualizar e compartilhar</span>
+    </div>
+
+    <btn btnClass="btn-red" (click)="continuar($event)" title="continuar" [btnConfirmText]="btnContinueText"></btn>
+
+</div>

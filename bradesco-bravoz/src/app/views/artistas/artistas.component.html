@@ -1,0 +1,66 @@
+<div class="bg-artistas">
+
+    <div class="col-xs-9 col-sm-5 col-md-5 left">
+        <h2>CONHEÇA<br>OS <span>ARTISTAS.</span></h2>
+    </div>
+
+    <div class="col-xs-3 col-sm-7 col-md-7 right">
+        <div id="tabs">
+
+            <ul class="nav nav-pills">
+                <li class="nav-item pointer">
+                    <a class="nav-link active" [ngClass]="{'active':activeTab==='search'}" (click)="actualTab('search')"
+                        data-toggle="tab">
+                        Por episódio
+                    </a>
+                </li>
+
+                <li class="nav-item pointer">
+                    <a class="nav-link" [ngClass]="{'active':activeTab==='result'}" data-toggle="tab"
+                        (click)="actualTab('result')">
+                        Ordem Alfabética
+                    </a>
+                </li>
+            </ul>
+
+            <span class="line"></span>
+
+            <div class="icon-left"></div>
+            <div class="icon-right"></div>
+
+            <div class="tab-content">
+
+                <div class="tab-pane" class="active">
+                    <div class="client-feedback">
+
+                        <ngx-slick-carousel *ngIf="activeTab == 'search'" class="feedback" [config]="sliderConfig">
+                            <div ngxSlickItem *ngFor="let episodioslide of episodioslides">
+                                <img src="{{ episodioslide.img }}" class="destaque" alt="" width="100%">
+                                <div class="float">
+                                    <h2>{{ episodioslide.titulo }}</h2>
+                                    <span>{{ episodioslide.ep }}</span>
+                                    <p>{{ episodioslide.texto }}</p>
+                                </div>
+                            </div>
+                        </ngx-slick-carousel>
+
+                        <ngx-slick-carousel *ngIf="activeTab == 'result'" class="feedback" [config]="sliderConfig">
+                            <div ngxSlickItem *ngFor="let alfaslide of sortArr">
+                                <img src="{{ alfaslide.img }}" class="destaque" alt="" width="100%">
+                                <div class="float">
+                                    <h2>{{ alfaslide.titulo }}</h2>
+                                    <span>{{ alfaslide.ep }}</span>
+                                    <p>{{ alfaslide.texto }}</p>
+                                </div>
+                            </div>
+                        </ngx-slick-carousel>
+
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>

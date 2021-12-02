@@ -1,0 +1,22 @@
+%btn {
+    font-family: 'Brilk Sans';
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: .5;
+    text-align: center;
+    border-radius: 24px;
+    width: 100%;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    outline: none;
+}
+
+%clearfix:after {
+    display: block;
+    clear: both;
+    content: '';
+}

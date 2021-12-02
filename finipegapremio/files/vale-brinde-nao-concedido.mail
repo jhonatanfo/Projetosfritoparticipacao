@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Promoção Partiu Viajar com Grupy Kids</title>
+</head>
+<body>
+	<center>
+		<div>
+			<p>
+			  <strong>Olá, {$nome}!</strong>
+			</p>
+			<p>
+				Encontramos algum(as) inconsistência(s) e seu processo de participação.<br>
+				E não será possível enviar seu vale-brinde.
+			</p>
+			<p>
+				Caso haja alguma dúvida acesse <a href="{$link}" target="_blank">www.partiuviajarcomgrupykids.com.br</a> e entre em contato conosco.
+			</p>
+			<p>
+				Atenciosamente,<br/>
+				Equipe Promoção Nazca.
+			</p>
+		</div>	
+	</center>
+</body>
+</html>

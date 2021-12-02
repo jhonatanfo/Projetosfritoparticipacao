@@ -1,0 +1,28 @@
+<app-header [titleHeader]="appTitle" [profImg]="profilePic"></app-header>
+
+<div class="padrao-margem cadastrar">
+
+  <h1>Digite o código que acabamos de te mandar por SMS</h1>
+  <p>Ele ficará ativo por XX minutos.</p>
+
+  <label class="two-name">
+    <div class="label-float">
+      <input type="text" placeholder=" " />
+      <label>Código</label>
+      <a (click)='modal = true'>Reenviar</a>
+    </div>
+  </label>
+
+  <app-btn nextPage="/vincular-chave" class="absolute one" disabled="0" label="Continuar"></app-btn>
+
+</div>
+
+<div *ngIf='modal == true' class="modal">
+  <div class="bg"></div>
+  <div class="box">
+    <h2>O código foi reenviado para o celular:</h2>
+    <p>+55 11 9876 5432</p>
+
+    <app-btn nextPage="/vincular-chave" disabled="0" label="OK"></app-btn>
+  </div>
+</div>

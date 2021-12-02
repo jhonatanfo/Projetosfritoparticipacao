@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="x-apple-disable-message-reformatting">
+    <title>Promoção Nazca Partiu Viajar com Grupy Kids</title>
+</head>
+<body>
+	<center>
+		<div>
+			<table border="1" width="100%"  cellpadding="0" cellspacing="0" align="center" bgcolor="#FED959" style="border-color: #562C7B">
+				<tbody>
+					<tr>
+						<td>
+							<p style="font-weight:bold;color:#562C7B;font-family:Arial,sans-serif">
+								Nome:
+							</p>
+						</td>
+						<td>
+							<p style="color:#562C7B;font-family:Arial,sans-serif">
+								{$nome}
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-weight:bold;color:#562C7B;font-family:Arial,sans-serif">
+								CPF:
+							</p>
+						</td>
+						<td>
+							<p style="color:#562C7B;font-family:Arial,sans-serif">
+								{$cpf}
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-weight:bold;color:#562C7B;font-family:Arial,sans-serif">
+								Email:
+							</p>
+						</td>
+						<td>
+							<p style="color:#562C7B;font-family:Arial,sans-serif">
+								{$email}
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td>
+							<p style="font-weight:bold;color:#562C7B;font-family:Arial,sans-serif">
+								Telefone:
+							</p>
+						</td>
+						<td>
+							<p style="color:#562C7B;font-family:Arial,sans-serif">
+								{$telefone}
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2" align="center">
+							<p style="font-weight:bold;font-size:18px;color:#562C7B;font-family:Arial,sans-serif">
+								Mensagem:
+							</p>
+						</td>
+					</tr>
+					<tr>
+						<td colspan="2">
+							<br/>
+							<p style="color:#562C7B;font-family:Arial,sans-serif">
+								{$mensagem}
+							</p>
+							<br/>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>	
+	</center>
+</body>
+</html>

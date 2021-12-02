@@ -1,0 +1,412 @@
+.slide-principal {
+  // height: 960px;
+  position: relative;
+
+  .classSlideFor {
+    position: relative;
+    img {
+      position: absolute;
+      @media (min-width: 768px) and (max-width: 991px) {
+        height: 100%;
+        object-fit: cover;
+      }
+      @media (min-width: 0px) and (max-width: 767px) {
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .conteudo {
+      padding: 15% 45px;
+      @media (min-width: 992px) and (max-width: 1199px) {
+        padding: 18% 45px 11% 45px;
+      }
+      @media (min-width: 768px) and (max-width: 991px) {
+        padding: 22% 45px 14% 16px;
+      }
+      @media (min-width: 0px) and (max-width: 767px) {
+        padding: 104px 10px 0 20px;
+        height: 560px;
+      }
+      h2 {
+        font-size: 48px;
+        font-weight: 900;
+        color: white;
+        line-height: 58px;
+        margin-bottom: 17px;
+        @media (min-width: 1200px) and (max-width: 1600px) {
+          font-size: 42px;
+          line-height: 45px;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          font-size: 37px;
+          line-height: 40px;
+        }
+        @media (min-width: 768px) and (max-width: 991px) {
+          font-size: 30px;
+          line-height: 36px;
+        }
+        @media (min-width: 0px) and (max-width: 767px) {
+          font-size: 34px;
+          line-height: 38px;
+        }
+        span {
+          color: #eb1940;
+        }
+      }
+      p {
+        font-size: 24px;
+        font-weight: 300;
+        color: white;
+        margin-bottom: 80px;
+        @media (min-width: 1200px) and (max-width: 1600px) {
+          font-size: 20px;
+          margin-bottom: 60px;
+        }
+        @media (min-width: 992px) and (max-width: 1199px) {
+          font-size: 18px;
+          margin-bottom: 42px;
+        }
+        @media (min-width: 0px) and (max-width: 991px) {
+          font-size: 18px;
+          margin-bottom: 42px;
+        }
+      }
+      a {
+        font-size: 16px;
+        font-weight: 300;
+        color: white;
+        text-decoration: none;
+        padding: 13px 7px 13px 20px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        background-image: -webkit-gradient(linear, left top, right top, from(#31559a), to(#e41b40));
+        background-image: linear-gradient(to right, #31559a, #e41b40);
+        @media (min-width: 0px) and (max-width: 767px) {
+          font-size: 10px;
+        }
+        svg {
+          border-left: 1px solid #ffffff;
+          width: 44px;
+          margin-left: 10px;
+          height: 13px;
+          padding: 2px 0;
+          @media (min-width: 0px) and (max-width: 767px) {
+            height: 10px;
+          }
+        }
+      }
+    }
+    &.slick-initialized {
+      .slick-slide {
+        outline: none;
+      }
+    }
+  }
+
+  .titulo-slide-principal {
+    position: absolute;
+    right: 50%;
+    margin-top: -250px;
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-right: -174px;
+    @media (min-width: 0px) and (max-width: 767px) {
+      margin-top: -115px;
+      font-size: 12px;
+      right: 0;
+      width: 70%;
+      margin-right: 0;
+    }
+  }
+
+  .icon-left {
+    position: absolute;
+    cursor: pointer;
+    right: 109px;
+    margin-top: -250px;
+    width: 10px;
+    height: 15px;
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+    background: url(../../../assets/images/icon-nav-slide.svg);
+    @media (min-width: 0px) and (max-width: 767px) {
+      width: 7px;
+      height: 11px;
+      background-size: cover;
+      right: 62px;
+      margin-top: -115px;
+    }
+    &.slick-disabled{
+      opacity: 0.4;
+    }
+  } 
+  
+  .icon-right {
+    position: absolute;
+    cursor: pointer;
+    right: 58px;
+    margin-top: -250px;
+    width: 10px;
+    height: 15px;
+    background: url(../../../assets/images/icon-nav-slide.svg);
+    @media (min-width: 0px) and (max-width: 767px) {
+      width: 7px;
+      height: 11px;
+      background-size: cover;
+      right: 29px;
+      margin-top: -115px;
+    }
+    &.slick-disabled{
+      opacity: 0.4;
+    }
+  }
+
+  .classSlideNav {
+    width: 49.3%;
+    position: absolute;
+    right: 0;
+    bottom: -9px;
+    @media (min-width: 0px) and (max-width: 767px) {
+      width: 70%;
+      bottom: -53px;
+    }
+    .box-conteudo {
+      margin: 9px 0;
+      transition: 0.2s;
+      width: 296px;
+      height: 200px;
+      position: relative;
+      @media (min-width: 0px) and (max-width: 767px) {
+        width: 183px;
+        height: 121px;
+      }
+      &:before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background: rgba(29, 29, 29, 0.7);
+      }
+      cursor: pointer;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+      .conteudo {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        padding: 20px 13px;
+        h2 {
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 19px;
+          color: white;
+          margin: 0;
+          text-transform: uppercase;
+          @media (min-width: 0px) and (max-width: 767px) {
+            font-size: 12px;
+            line-height: 17px;
+          }
+        }
+        span {
+          display: block;
+          position: absolute;
+          right: 15px;
+          top: 9px;
+          font-size: 15px;
+          font-weight: 500;
+          line-height: 19px;
+          color: white;
+          @media (min-width: 0px) and (max-width: 767px) {
+            font-size: 11px !important;
+          }
+          &:before {
+            content: "";
+            width: 14px;
+            height: 3px;
+            position: absolute;
+            background: #eb1940;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            margin-top: 23px;
+          }
+        }
+        h3 {
+          display: block;
+          width: 141px;
+          height: 20px;
+          position: absolute;
+          bottom: 13px;
+          @media (min-width: 0px) and (max-width: 767px) {
+            width: 117px !important;
+            bottom: -2px !important;
+          }
+          :before {
+            content: "Assistir";
+            display: block;
+            position: absolute;
+            left: 0;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 19px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: white;
+            font-style: normal;
+            padding-left: 28px;
+            @media (min-width: 0px) and (max-width: 767px) {
+              font-size: 11px !important;
+            }
+          }
+          i {
+            background: url(../../../assets/images/icon-assistir.svg) center no-repeat;
+            width: 20px;
+            height: 20px;
+            float: left;
+          }
+        }
+      }
+    }
+
+    .slick-active {
+      .box-conteudo {
+        width: 320px;
+        height: 216px;
+        // transform: scale(1.1, 1.1);
+        background-color: #292929;
+        z-index: 3;
+        position: relative;
+        margin: 0px 0;
+        @media (min-width: 0px) and (max-width: 767px) {
+          width: 199px;
+          height: 137px;
+        }
+        &:before {
+          content: "";
+          float: left;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          background: rgba(230, 26, 67, 1);
+          background: -moz-linear-gradient(
+            135deg,
+            rgba(230, 26, 67, 0.85) 0%,
+            rgba(196, 33, 90, 0.85) 25%,
+            rgba(175, 37, 104, 0.85) 50%,
+            rgba(144, 42, 120, 0.85) 75%,
+            rgba(116, 48, 139, 0.85) 100%
+          );
+          background: -webkit-gradient(
+            left top,
+            right bottom,
+            color-stop(0%, rgba(230, 26, 67, 1)),
+            color-stop(25%, rgba(196, 33, 90, 1)),
+            color-stop(50%, rgba(175, 37, 104, 1)),
+            color-stop(75%, rgba(144, 42, 120, 1)),
+            color-stop(100%, rgba(116, 48, 139, 1))
+          );
+          background: -webkit-linear-gradient(
+            135deg,
+            rgba(230, 26, 67, 0.85) 0%,
+            rgba(196, 33, 90, 0.85) 25%,
+            rgba(175, 37, 104, 0.85) 50%,
+            rgba(144, 42, 120, 0.85) 75%,
+            rgba(116, 48, 139, 0.85) 100%
+          );
+          background: -o-linear-gradient(
+            135deg,
+            rgba(230, 26, 67, 0.85) 0%,
+            rgba(196, 33, 90, 0.85) 25%,
+            rgba(175, 37, 104, 0.85) 50%,
+            rgba(144, 42, 120, 0.85) 75%,
+            rgba(116, 48, 139, 0.85) 100%
+          );
+          background: -ms-linear-gradient(
+            135deg,
+            rgba(230, 26, 67, 0.85) 0%,
+            rgba(196, 33, 90, 0.85) 25%,
+            rgba(175, 37, 104, 0.85) 50%,
+            rgba(144, 42, 120, 0.85) 75%,
+            rgba(116, 48, 139, 0.85) 100%
+          );
+          background: linear-gradient(
+            135deg,
+            rgba(230, 26, 67, 0.85) 0%,
+            rgba(196, 33, 90, 0.85) 25%,
+            rgba(175, 37, 104, 0.85) 50%,
+            rgba(144, 42, 120, 0.85) 75%,
+            rgba(116, 48, 139, 0.85) 100%
+          );
+          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e61a43', endColorstr='#74308b', GradientType=1 );
+        }
+        .conteudo {
+          padding: 17px 18px;
+          span {
+            display: block;
+            position: absolute;
+            right: 15px;
+            top: 9px;
+            font-size: 15px;
+            font-weight: 500;
+            line-height: 19px;
+            color: white;
+            &:before {
+              content: "";
+              width: 14px;
+              height: 3px;
+              position: absolute;
+              background: #eb1940;
+              left: 0;
+              right: 0;
+              margin: 0 auto;
+              margin-top: 23px;
+            }
+          }
+          h3 {
+            display: block;
+            width: 141px;
+            height: 20px;
+            position: absolute;
+            bottom: 13px;
+            :before {
+              content: "Assistindo";
+              display: block;
+              position: absolute;
+              left: 0;
+              font-size: 15px;
+              font-weight: 400;
+              line-height: 19px;
+              letter-spacing: 3px;
+              text-transform: uppercase;
+              color: white;
+              text-decoration: none;
+              font-style: normal;
+              text-align: left;
+              padding-left: 0;
+            }
+            i {
+              background: url(../../../assets/images/icon-assistindo.svg) center no-repeat;
+              width: 20px;
+              height: 20px;
+              float: right;
+            }
+          }
+        }
+      }
+    }
+
+    &.slick-initialized {
+      .slick-slide {
+        outline: none;
+      }
+    }
+  }
+}

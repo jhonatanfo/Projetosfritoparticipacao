@@ -1,0 +1,6 @@
+core/cache/templates_c/*.tpl.php
+logs/*
+files/notas-fiscais/*.jpg
+files/notas-fiscais/*.png
+files/notas-fiscais/*.pdf
+.sass-cache

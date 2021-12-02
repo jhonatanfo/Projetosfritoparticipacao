@@ -1,0 +1,38 @@
+//BOTAO
+@mixin btn($background-color, $color, $height, $border: false) {
+    @extend %btn;
+    height: $height;
+    color: $color;
+    background-color: $background-color;
+    &:hover,
+    &:active {
+        background-color: $vermelho-escuro;
+        transition: all 0.3s ease;
+    }
+    @if $border {
+        border: 1px solid $color;
+        padding: 14px 0;
+    }
+}
+
+@function calcRem($size) {
+    $remSize: $size / 16px;
+    @return #{$remSize}rem;
+}
+
+@mixin fontSize($size, $lh: null) {
+    font-size: $size;
+    @if ($lh !=null) {
+        line-height: $lh;
+    }
+    @else {
+        line-height: $size * 1.5;
+    }
+}
+
+@mixin bgImage($url, $size, $vertical, $horizontal) {
+    background-image: url($url);
+    background-size: $size;
+    background-repeat: no-repeat;
+    background-position: $vertical $horizontal;
+}

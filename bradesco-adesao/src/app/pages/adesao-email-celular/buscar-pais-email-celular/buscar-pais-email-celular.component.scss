@@ -1,0 +1,95 @@
+.padrao-margem {
+    padding: 18px;
+  }
+  
+  .buscar-pais {
+    label {
+      position: relative;
+      height: 35px;
+      display: block;
+      margin-bottom: 10px;
+  
+      input {
+        border: none;
+        box-shadow: 0 0 0 0;
+        outline: 0;
+        border-bottom: 2px solid #3a68fa;
+        width: 100%;
+        padding: 0 33px;
+      }
+  
+      input[type="text"] {
+        font-family: "Montserrat", sans-serif;
+        font-size: 16px;
+        color: #6d6d71;
+        font-weight: 600;
+        padding: 7px 31px 7px 80px;
+        width: calc(100% - 110px);
+      }
+  
+      input[type="text"].pais {
+        padding: 7px 30px;
+        width: calc(100% - 60px);
+      }
+  
+      .icon-voltar {
+        position: absolute;
+        top: 6px;
+        left: 0;
+        z-index: 120;
+        height: 20px;
+        cursor: pointer;
+      }
+  
+      .icon-fechar {
+        position: absolute;
+        right: 0;
+        top: 7px;
+        z-index: 120;
+        height: 20px;
+        cursor: pointer;
+      }
+    }
+  
+    table {
+      width: 100%;
+      tbody {
+        tr {
+          td {
+            font-family: "Montserrat", sans-serif;
+            font-size: 14px;
+            color: #47474b;
+            font-weight: 600;
+            padding: 20px 0;
+            border-bottom: 1px solid #c7c9cc;
+          }
+        }
+      }
+    }
+  }
+  
+  .input-padrao {
+    span {
+      padding-top: 7px;
+      position: absolute;
+      padding-left: 25px;
+      font-size: 16px;
+      font-weight: 500;
+      color: #6d6d71;
+    }
+  
+    a {
+      float: right;
+      margin-top: 20px;
+      font-size: 14px;
+      font-weight: 600;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.29;
+      letter-spacing: normal;
+      text-align: right;
+      color: #3a68fa;
+      text-decoration: none;
+    }
+  }
+  

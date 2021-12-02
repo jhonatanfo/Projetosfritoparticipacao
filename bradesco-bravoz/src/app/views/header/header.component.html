@@ -1,0 +1,26 @@
+<nav class="navbar navbar-fixed-top" (scroll)="onWindowScroll();">
+
+    <div class="navbar-header">
+
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapseBasic"
+            (click)="isCollapsed = !isCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+
+        <div class="brand-space">
+            <i (click)="scrollToElement('home')" class="bravoz-logo pointer"></i>
+        </div>
+
+    </div>
+
+    <div class="collapse navbar-collapse" id="collapseBasic" [collapse]="!isCollapsed">
+        <ul class="nav navbar-nav navbar-right style-menu">
+            <li class="pointer"><a (click)="scrollToElement('artistas')">Artistas</a></li>
+            <li class="pointer"><a (click)="scrollToElement('episodios')">Episódios</a></li>
+            <li class="pointer"><a (click)="scrollToElement('projeto')">Sobre</a></li>
+        </ul>
+    </div>
+
+</nav>

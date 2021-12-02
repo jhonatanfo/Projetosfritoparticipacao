@@ -1,0 +1,66 @@
+<app-header [titleHeader]="appTitle" [profImg]="profilePic"></app-header>
+
+<div class="padrao-margem cadastrar">
+
+  <h1>É hora de cadastrar seus dados como chaves de identificação</h1>
+  <p>Com a chave, você gera QR Codes e muito mais! Dá pra cadastrar só 1 dos dados ou os 3.</p>
+
+
+  <label class="two-name">
+
+    <div class="check">
+      <input (click)='modal = true' type='checkbox' name='q1_myOptions[]' id="input1" />
+      <label for="input1"></label>
+    </div>
+
+    <label class="exibe-label" for="cpf">CPF</label>
+
+    <div class="label-float">
+      <input class="remove-line" type="text" disabled placeholder="123.456.789-00" />
+      <label>123.456.789-00</label>
+    </div>
+  </label>
+
+  <label class="two-name">
+
+    <div class="check">
+      <input type='checkbox' name='q1_myOptions[]' id="input2" />
+      <label for="input2"></label>
+    </div>
+
+    <div class="label-float">
+      <input type="text" disabled placeholder=" " />
+      <label>Celular</label>
+    </div>
+  </label>
+
+
+  <label class="two-name">
+
+    <div class="check">
+      <input type='checkbox' name='q1_myOptions[]' id="input3" />
+      <label for="input3"></label>
+    </div>
+
+    <div class="label-float">
+      <input type="text" disabled placeholder=" " />
+      <label>E-mail</label>
+    </div>
+  </label>
+
+  <app-btn btnType="true" [disabled]="avancar" label="Continuar" secondLabel="Cadastrar depois" nextPage="/sem-cadastrar-dados-encerrados">
+  </app-btn>
+
+</div>
+
+
+
+<div *ngIf='modal == true' class="modal">
+  <div class="bg"></div>
+  <div class="box">
+    <h2>Ok! Você vai fazer parte do PIX só com agência e conta</h2>
+
+    <app-btn btnType="true" [disabled]="avancar" label="Continuar" secondLabel="Voltar" nextPage="/sem-cadastrar-dados-encerrar">
+    </app-btn>
+  </div>
+</div>

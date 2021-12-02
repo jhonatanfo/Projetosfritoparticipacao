@@ -1,0 +1,366 @@
+.participe,
+.cadastre-se,
+.minha-area {
+  min-height: calc(100vh - 183px);
+  background-color: $amarelo;
+  padding-top: calcRem(40px);
+  padding-bottom: calcRem(40px);
+}
+
+.card {
+  border-radius: calcRem(25px);
+  border: calcRem(6px) solid $vermelho;
+  background-color: white;
+  padding: calcRem(20px);
+  text-align: center;
+  margin-top: calcRem(16px);
+  margin-bottom: calcRem(16px);
+  display: table;
+  width: 100%;
+
+  .table-cell {
+    display: table-cell;
+    vertical-align: middle;
+    width: 100%;
+  }
+
+  h3 {
+    font-weight: 900;
+    text-transform: uppercase;
+    color: $vermelho;
+    font-size: calcRem(24px);
+    margin-top: 0;
+  }
+
+  a {
+    color: $cinza;
+    text-decoration: underline;
+    margin-top: calcRem(16px);
+    display: inline-block;
+
+    &.btn {
+      color: $branco;
+      text-decoration: none;
+      padding-top: 5px !important;
+
+      &:focus,
+      &:active,
+      &:hover {
+        background-color: $vermelho;
+      }
+    }
+  }
+
+  &.no-border {
+    border: none;
+  }
+}
+
+.content-form-esqueci {
+  display: none;
+}
+
+.cadastre-se {
+  h1 {
+    color: $vermelho;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .carrossel-cadastro {
+    background-color: $branco;
+    border-radius: calcRem(25px);
+    border: calcRem(6px) solid $vermelho;
+    // height: calcRem(650px);
+
+    .step {
+      padding: calcRem(20px) calcRem(20px) calcRem(60px);
+      display: table;
+
+      .table-cell {
+        display: table-cell;
+        vertical-align: middle;
+
+        h4 {
+          color: $vermelho;
+          text-align: center;
+          margin-top: 0;
+          margin-bottom: calcRem(32px);
+        }
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    .slick-dots {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: calcRem(-88px);
+
+      &:before {
+        content: "";
+        width: 100%;
+        height: calcRem(10px);
+        border-radius: calcRem(10px);
+        position: absolute;
+        z-index: 0;
+        left: 0;
+        top: 50%;
+        margin-top: calcRem(-5px);
+        background-color: $cinza-claro;
+      }
+
+      li {
+        margin: 0 calcRem(12px);
+
+        &:first-child {
+          margin-left: 0;
+        }
+        &:last-child {
+          margin-right: 0;
+        }
+
+        button {
+          width: calcRem(16px);
+          height: calcRem(16px);
+          background: none;
+          position: relative;
+          cursor: default;
+
+          &:before {
+            content: "";
+            width: calcRem(4px);
+            height: calcRem(4px);
+            background-color: $cinza-escuro;
+            border-radius: calcRem(20px);
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: calcRem(-2px);
+            margin-left: calcRem(-2px);
+          }
+        }
+
+        &.slick-active {
+          button {
+            &:before {
+              border: calcRem(2px) solid $branco;
+              width: calcRem(16px);
+              height: calcRem(16px);
+              margin-top: calcRem(-8px);
+              margin-left: calcRem(-8px);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.minha-area {
+  h1 {
+    color: $vermelho;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $vermelho;
+    text-align: center;
+  }
+
+  .quadro {
+    border-radius: calcRem(30px);
+    border: calcRem(6px) solid $roxo;
+    background-color: $branco;
+    overflow: hidden;
+
+    .nav-tabs {
+      background-color: $roxo;
+      border: none;
+      text-align: center;
+
+      & > li {
+        display: inline-block;
+        float: none;
+        margin: calcRem(16px) calcRem(10px) calcRem(20px);
+
+        & > a {
+          text-transform: uppercase;
+          color: $branco;
+          font-size: calcRem(24px);
+          font-weight: 900;
+          padding: 0;
+          height: calcRem(50px);
+          line-height: calcRem(50px);
+          margin: 0;
+          border: calcRem(4px) solid $branco;
+          border-radius: calcRem(25px);
+          padding-left: calcRem(20px);
+          padding-right: calcRem(20px);
+
+          &:hover,
+          &:focus {
+            outline: none;
+            background-color: transparent;
+          }
+        }
+
+        &.active > a {
+          background-color: $roxo;
+          color: $branco;
+        }
+      }
+    }
+
+    .tab-content {
+      display: inline-block;
+      width: 100%;
+
+      .tab-pane {
+        h3 {
+          text-align: center;
+          color: $vermelho;
+          font-style: calcRem(24px);
+          margin-top: calcRem(24px);
+          margin-bottom: calcRem(24px);
+        }
+        .search-product {
+          display: block;
+          position: absolute;
+          background-color: $amarelo;
+          width: calc(100% - 40px);
+          margin-left: 20px;
+          text-align: left;
+          z-index: 1;
+          border: calcRem(2px) solid $vermelho;
+          border-top: none;
+          border-radius: 0 0 calcRem(25px) calcRem(25px);
+          display: none;
+          top: calcRem(50px);
+
+          p {
+            margin: 0;
+            text-align: left;
+            padding: calcRem(4px);
+
+            a {
+              color: $vermelho;
+              font-size: calcRem(13px);
+            }
+          }
+        }
+
+        .label-qtd {
+          width: calc(100% - 65px);
+        }
+
+        .btn-mais-produto,
+        .btn-menos-produto {
+          display: inline-block;
+          padding: 0 !important;
+          width: calcRem(50px);
+          margin-left: calcRem(10px);
+          vertical-align: top;
+
+          i {
+            top: -1px;
+          }
+        }
+        .btn-menos-produto {
+          background-color: $amarelo;
+          color: $vermelho;
+          border: calcRem(2px) solid $vermelho;
+        }
+
+        .label-file {
+          position: relative;
+          margin-bottom: calcRem(16px);
+          width: 100%;
+          display: inline-block;
+
+          input {
+            width: 100%;
+            border-radius: calcRem(25px);
+            height: calcRem(50px);
+            line-height: calcRem(50px);
+            opacity: 0;
+
+            & + label {
+              width: 100%;
+              background-color: $amarelo;
+              height: calcRem(50px);
+              line-height: calcRem(50px);
+              border-radius: calcRem(25px);
+              position: absolute;
+              top: 0;
+              left: 0;
+              cursor: pointer;
+              font-size: calcRem(14px);
+              font-weight: 400;
+              text-decoration: underline;
+              padding-left: calcRem(16px);
+
+              svg {
+                width: calcRem(12px);
+                height: calcRem(24px);
+                display: inline-block;
+                vertical-align: middle;
+                margin-right: calcRem(8px);
+              }
+            }
+          }
+
+          p {
+            &.erro {
+              color: $vermelho;
+              font-size: calcRem(12px);
+              line-height: calcRem(18px);
+              display: none;
+              margin-bottom: 0;
+              margin-top: calcRem(4px);
+            }
+            &.sub {
+              font-size: calcRem(12px);
+              line-height: calcRem(18px);
+              margin-bottom: 0;
+              margin-top: calcRem(4px);
+            }
+          }
+        }
+
+        .ipt-numero {
+          padding-right: calcRem(40px);
+        }
+        .infos-nf {
+          background-color: $vermelho;
+          width: calcRem(20px);
+          height: calcRem(20px);
+          line-height: calcRem(20px);
+          display: block;
+          position: absolute;
+          border-radius: calcRem(15px);
+          text-align: center;
+          color: $branco;
+          top: 50%;
+          margin-top: calcRem(-10px);
+          right: calcRem(14px);
+          font-size: calcRem(14px);
+          padding-top: calcRem(2px);
+        }
+
+        .btn {
+          margin-bottom: calcRem(20px);
+        }
+
+        .alterar-dados {
+          padding-top: calcRem(24px);
+        }
+      }
+    }
+  }
+}

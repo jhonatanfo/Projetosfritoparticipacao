@@ -1,0 +1,30 @@
+<app-header [titleHeader]="appTitle" [profImg]="profilePic"></app-header>
+
+<h1>Agora, é só confirmar</h1>
+
+<div class="content">
+    <p>
+        CPF <br>
+        <b>123.456.789-00</b>
+    </p>
+
+    <p>
+        Tipo de conta <br>
+        <b>Conta-Corrente</b>
+    </p>
+
+    <span>Voltar para edição</span>
+
+    <div class="check">
+        <input (click)="validationCheck()" type='checkbox' name='q1_myOptions[]' id="input_1_0" />
+        <label for="input_1_0"></label>
+        <p>
+            Li e concordo com o Termo de Uso
+        </p>
+    </div>
+
+    <app-btn *ngIf='exibeBotao' (click)="nextPage()" class="btn-cont btn-modal" [disabled]="routeValidation"
+        label="Continuar"></app-btn>
+
+    <i *ngIf='exibeIcone' class="success"></i>
+</div>

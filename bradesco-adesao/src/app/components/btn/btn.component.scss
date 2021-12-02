@@ -1,0 +1,72 @@
+.btn-cont {
+    display: block;
+    margin-bottom: 40px; 
+     
+    &.absolute {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: 24px;
+      margin-right: 24px;
+      &.one{
+        @media only screen and (max-height: 565px) {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin-left: 24px;
+          margin-right: 24px;
+        }
+        @media only screen and (max-height: 490px) {
+          position: relative;
+          margin: 0;
+          margin-bottom: 40px;
+          margin-left: 24px;
+          margin-right: 24px;
+        }
+      }
+      @media only screen and (max-height: 565px) {
+        position: relative;
+        margin: 0;
+        margin-bottom: 40px;
+        margin-left: 24px;
+        margin-right: 24px;
+      }
+    }
+  
+    &.fixed {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin-left: 24px;
+      margin-right: 24px;
+    }
+  
+    button {
+      height: 48px;
+      width: 100%;
+      padding-top: 16px;
+      padding-bottom: 16px;
+      border: none;
+      border-radius: 24px;
+      font-size: 14px;
+      font-weight: bold;
+      color: #ffffff;
+      outline: none;
+      background: #e1173f;
+  
+      &.btn-none{
+        background: transparent;
+        color: #3B69FF;
+        margin-top: 5px;
+        margin-bottom: -16px;
+      }
+  
+      &.disable {
+        background: #a7a8ac;
+      }
+    }
+  }
+  

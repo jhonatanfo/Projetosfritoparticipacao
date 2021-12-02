@@ -1,0 +1,64 @@
+<div class="slide-principal">
+
+    <ngx-slick-carousel class="classSlideFor" #slickModal="slick-carousel" [config]="slideFor">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            <img src="{{ slide.imgOne }}" alt="" width="100%">
+            <div class="container conteudo">
+                <div class="col-md-6">
+                    <h2>
+                        <span>Bravoz | ep.{{slide.ep}}</span><br>
+                        {{slide.nameOne}} <span>+</span><br>
+                        {{slide.nameTwo}}
+                    </h2>
+                    <p>{{slide.txt}}</p>
+
+                    <a [href]="slide.videoURL" data-lity>
+                        Vídeo completo
+                        <svg xmlns="http://www.w3.org/2000/svg" width="15.557" height="9.051"
+                            viewBox="0 0 15.557 9.051">
+                            <g id="Grupo_198" data-name="Grupo 198" transform="translate(-647.5 -541.872)">
+                                <g id="Grupo_197" data-name="Grupo 197"
+                                    transform="translate(661.875 540.796) rotate(90)">
+                                    <path id="Caminho_108" data-name="Caminho 108"
+                                        d="M0,4.875,2.072,2.438,4.145,0,6.217,2.438,8.289,4.875"
+                                        transform="translate(1.457 -0.41)" fill="none" stroke="#fff"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                    <line id="Linha_14" data-name="Linha 14" y2="14.785"
+                                        transform="translate(5.602 -0.41)" fill="none" stroke="#fff"
+                                        stroke-miterlimit="10" stroke-width="1" />
+                                </g>
+                            </g>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </ngx-slick-carousel>
+
+    <h3 class="titulo-slide-principal">Últimos Vídeos</h3>
+
+    <div class="icon-left"></div>
+    <div class="icon-right"></div>
+
+    <ngx-slick-carousel class="classSlideNav" #slickModal="slick-carousel" [config]="slideNav">
+
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+
+
+                <div class="box-conteudo">
+                    <img src="{{ slide.imgTwo }}" alt="">
+                    <div class="conteudo">
+                        <h2>
+                            {{slide.nameOne}} +<br>
+                            {{slide.nameTwo}}
+                        </h2>
+                        <span>ep.{{slide.ep}}</span>
+                        <h3> <i></i></h3>
+                    </div>
+                </div>
+
+
+        </div>
+    </ngx-slick-carousel>
+
+</div>

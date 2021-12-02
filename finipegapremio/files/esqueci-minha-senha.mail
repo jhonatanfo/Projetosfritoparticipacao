@@ -1,0 +1,158 @@
+<html>
+​
+<head>
+	<title>esqueci_senha</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+</head>
+​
+<body>
+	
+	<table width="600" border="0" align="center" cellpadding="0" cellspacing="0" style="font-family: Arial, Helvetica, sans-serif;">
+​
+		<tr border="0" style="border: 0; margin: 0; padding: 0; width: 600px; height: 164px; background: #ffd530;">
+			<td border="0" colspan="6" style="border: 0; margin: 0; padding: 0; width: 600px; height: 164px; background: #ffd530;">
+​
+				<img style="display: block; border: 0; margin: 0; padding: 0; width: 600px; height: 164px" src="https://partiuviajarcomgrupykids.com.br/email/images/header.png" width="600" height="164" alt="Redefini&#231;&#227;o de senha">
+			
+			</td>
+		</tr>
+​
+		<tr border="0" style="border: 0; margin: 0; padding: 0; width: 600px; background: #FFD530;">
+​
+			<td colspan="3" rowspan="6" border="0" align="left" style="border: 0; margin: 0; padding: 0; width: 127px; height: 434px">
+				<img style="display: block; border: 0; margin: 0; padding: 0; width: 127px; height: 434px" src="https://partiuviajarcomgrupykids.com.br/email/images/esquerda_dragao.png" width="127" height="434" alt="Redefini&#231;&#227;o de senha">
+			</td>
+​
+			<td border="0" colspan="2" style="background-color: #FFD530; color: #562c7b; border: 0; margin: 0; padding: 0; width: 362px; height: 107px"  width="362" height="107" alt="Nome do usu&#225;rio">
+				Olá, {$nome}
+			</td>
+			
+			<td rowspan="6" border="0" align="right" style="border: 0; margin: 0; padding: 0; width: 111px; height: 434px">
+				<img style="display: block; border: 0; margin: 0; padding: 0; width: 111px; height: 434px" src="https://partiuviajarcomgrupykids.com.br/email/images/direita_dragao.png" width="111" height="434" alt="Redefini&#231;&#227;o de senha">
+			</td>
+			
+		</tr> 
+		
+		<tr border="0" style="border: 0; margin: 0; padding: 0; width: 362px; height: 51px">
+			<td colspan="2" border="0" style="background-color: #FFD530; color: #562c7b; border: 0; margin: 0; padding: 0; width: 362px; height: 51px" width="362" height="51" colspan="2">
+				Sua senha temporária é: <b>{$senha_tmp}</b>
+			</td>
+		</tr> 
+​
+​
+		<tr border="0" style="border: 0; margin: 0; padding: 0; width: 362px; height: 70px">
+			
+			<td colspan="2" border="0" style="background-color: #FFD530; color: #562c7b; border: 0; margin: 0; padding: 0; width: 362px; height: 70px" width="362" height="70" alt="Site Nazca" colspan="2">
+				Acesse o site
+				<a style="text-decoration: none; color: #562c7b;" target="_blank" href="https://www.partiuviajarcomgrupykids.com.br">
+					<b>www.partiuviajarcomgrupykids.com.br</b>
+				</a>
+				e faça o login com sua senha temporária.
+			</td>
+​
+		</tr>
+		
+		
+		
+		<tr border="0" style="border: 0; margin: 0; padding: 0; width: 362px; height: 50px; background: #FFD530;">
+			<td colspan="2" border="0" style="border: 0; margin: 0; padding: 0; width: 362px; height: 50px; background: #FFD530;">
+				<img style="display: block; border: 0; margin: 0; padding: 0; width: 362px; height: 50px; background: #FFD530;" src="https://partiuviajarcomgrupykids.com.br/email/images/blank_space.png" width="362" height="50" alt="Space">
+			</td>
+		</tr>
+​
+​
+		 
+		<tr border="0" style="border: 0; margin: 0; padding: 0; width: 362px; height: 47px">
+			<td border="0" style="background-color: #FFD530; color: #562c7b; border: 0; margin: 0; padding: 0; width: 362px; height: 47px" width="362" height="47" colspan="2">
+				Atenciosamente, <br>
+				Equipe Promoção Nazca.
+			</td>
+		</tr>  
+​
+​
+		
+ 
+		<tr border="0" style="border: 0; margin: 0; padding: 0; width: 362px; height: 109px; background: #FFD530;" align="right">
+			<td colspan="2" border="0" align="right" style="border: 0; margin: 0; padding: 0; width: 362px; height: 109px; background: #FFD530;">
+				<img style="display: block; border: 0; margin: 0; padding: 0; width: 362px; height: 109px;" src="https://partiuviajarcomgrupykids.com.br/email/images/blank_2.png" width="362" height="109" alt="blank_2">
+			</td>
+		</tr>   
+ 
+   
+		<tr style="background: #57297d;">
+			<td rowspan="3">
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/b_1.png" width="61" height="139"
+					alt="b_1"></td>
+			<td colspan="3">
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/b_0.png" width="340" height="30"
+					alt="b_0"></td>
+			<td colspan="2" rowspan="4">
+				<a href="https://partiuviajarcomgrupykids.com.br/" target="_blank">
+					<img style="display: block; border: 0;"
+						src="https://partiuviajarcomgrupykids.com.br/email/images/footer_logo.png" width="199"
+						height="166" border="0" alt="Site Nazca"></a></td>
+		</tr>
+​
+	 
+		<tr style="background: #57297d;">
+			<td>
+				<a href="https://pt-br.facebook.com/nazcacosmeticos/" target="_blank">
+					<img style="display: block; border: 0;"
+						src="https://partiuviajarcomgrupykids.com.br/email/images/face_nazca.png" width="33" height="34"
+						border="0" alt="Facebook Nazca"></a></td>
+			<td>
+				<a href="https://www.instagram.com/nazcacosmeticos/?hl=pt-br" target="_blank">
+					<img style="display: block; border: 0;"
+						src="https://partiuviajarcomgrupykids.com.br/email/images/insta_nazca.png" width="33"
+						height="34" border="0" alt="Instagram Nazca"></a></td>
+			<td>
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/b_2.png" width="274" height="34"
+					alt="b_2"></td>
+		</tr>
+		<tr style="background: #57297d;">
+			<td style="font-size:11px; color: #FFFFFF; background-color: #57297D;" width="340" height="75"
+				alt="Endere&#231;o Nazca" colspan="3">
+				Loja: 11 4061-6041 | SAC: 0800 704 0240 <br>
+				Estrada Samuel Aizemberg, 1620 - Alves Dias, São Bernardo do Campo - SP, 09851-550 <br>
+				<a style="text-decoration: none; color: #FFFFFF;" href="mailto:atendimento.nazca@nazca.com.br">atendimento.nazca@nazca.com.br</a>
+		</tr>
+		<tr style="background: #57297d;">
+			<td colspan="4">
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/b_3.png" width="401" height="27"
+					alt="b_3"></td>
+		</tr>
+		<tr style="background: #57297d;">
+			<td>
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/spacer.gif" width="61" height="1" alt="">
+			</td>
+			<td>
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/spacer.gif" width="33" height="1" alt="">
+			</td>
+			<td>
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/spacer.gif" width="33" height="1" alt="">
+			</td>
+			<td>
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/spacer.gif" width="274" height="1" alt="">
+			</td>
+			<td>
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/spacer.gif" width="88" height="1" alt="">
+			</td>
+			<td>
+				<img style="display: block; border: 0;"
+					src="https://partiuviajarcomgrupykids.com.br/email/images/spacer.gif" width="111" height="1" alt="">
+			</td>
+		</tr> 
+	</table>
+	<!-- End Save for Web Slices -->
+</body>
+​
+</html>

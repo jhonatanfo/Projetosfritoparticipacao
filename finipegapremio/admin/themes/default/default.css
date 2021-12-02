@@ -1,0 +1,490 @@
+@CHARSET "UTF-8";
+
+body
+{
+	padding-top:60px;
+}
+
+.content-list{
+	margin-top: 20px;
+}
+
+.maincontent
+{
+	margin:auto;
+	padding: 0 20px;
+	width:900px;
+}
+
+.menu_top
+{
+	background:#ededed;	
+}
+
+.top_item 
+{
+	padding:10px;
+	background:#dfdfdf;
+	float:left;
+	margin:5px;
+	cursor:pointer;
+}
+
+.top_item:hover
+{
+	background:#cccccc;	
+}
+
+.menu_top_sub
+{
+	background:#f6f6f6;
+	padding:10px;
+	display:none;
+}
+
+.top_sub_item {
+	padding:5px;
+	float:left;
+}
+
+.clear {
+	clear:both;
+}
+
+
+.module_title
+{
+	font-size:16px;
+	font-weight:bold;
+	color:#333333;
+}
+
+.head_module_title
+{
+	font-size:20px;
+	font-weight:bold;
+	color:#444444;	
+}
+
+.module_title_login
+{
+	background-color:#ffffff;
+	padding:2px;
+	color:#333333;
+	font-weight:bold;
+	text-align:center;
+}
+
+.login {
+	width:330px;
+	background:#e3e3e3;
+	padding:20px;
+	margin:auto auto;
+}
+
+.error_field
+{
+	color:#c86363;
+}
+
+.success_field
+{
+	color:#13761f;
+}
+
+
+.label
+{
+	color:#787878;
+	font-weight:bold;	
+}
+
+.field
+{
+	color:#787878;	
+}
+
+.field_submit {
+	text-align:right;	
+}
+
+.item_line
+{
+	background:#dfdfdf;
+}
+
+.item_line:hover
+{
+	background:#cccccc;
+}
+
+
+.item_line td
+{
+	padding: 10px 5px;
+	
+}
+
+
+
+
+.buttom_admin
+{
+	padding:5px;
+	background-color:#323232;
+	color:#fff;
+	font-weight:bold;
+	font-size:11px;
+	text-decoration:none;
+	border:0;
+	cursor:pointer;
+}
+
+.buttom_ico { 
+	padding-left: 25px; 
+	background-repeat: no-repeat;
+	background-position: 5px center;
+}
+
+.ico_user_add { background-image: url('img/icon/user_add.gif'); }
+.ico_user_edit { background-image: url('img/icon/user_edit.gif'); }
+.ico_user_remove { background-image: url('img/icon/user_cross.gif'); }
+.ico_user_disable { background-image: url('img/icon/user_delete.gif'); }
+.ico_user { background-image: url('img/icon/user.gif'); }
+
+.ico_group_add { background-image: url('img/icon/group_add.gif'); }
+.ico_group_edit { background-image: url('img/icon/group_edit.gif'); }
+.ico_group_remove { background-image: url('img/icon/group_delete.gif'); }
+.ico_group { background-image: url('img/icon/group.gif'); }
+
+.ico_page_add { background-image: url('img/icon/page_add.gif'); }
+.ico_page_edit { background-image: url('img/icon/page_edit.gif'); }
+.ico_page_remove { background-image: url('img/icon/page_delete.gif'); }
+.ico_page_disable { background-image: url('img/icon/page_error.gif'); }
+.ico_page { background-image: url('img/icon/page.gif'); }
+
+.ico_note_add { background-image: url('img/icon/note_add.gif'); }
+.ico_note_edit { background-image: url('img/icon/note_edit.gif'); }
+.ico_note_remove { background-image: url('img/icon/note_delete.gif'); }
+.ico_note_disable { background-image: url('img/icon/note_error.gif'); }
+.ico_note { background-image: url('img/icon/note.gif'); }
+
+.ico_monitor_add { background-image: url('img/icon/monitor_add.gif'); }
+.ico_monitor_edit { background-image: url('img/icon/monitor_edit.gif'); }
+.ico_monitor_remove { background-image: url('img/icon/monitor_delete.gif'); }
+.ico_monitor_disable { background-image: url('img/icon/monitor_error.gif'); }
+.ico_monitor { background-image: url('img/icon/monitor.gif'); }
+
+.ico_save { background-image: url('img/icon/disk.gif'); }
+
+.ico_image { background-image: url('img/icon/image.gif'); }
+.ico_images { background-image: url('img/icon/images.gif'); }
+/*
+ * Módulo de usuários 
+ */
+
+
+/* mensagem de retorno com o status de sucesso ou não ao salvar dados */
+.status_msg_save {
+	color:#080;
+	text-align:center;
+}
+
+/* botão adicionar */
+.btn_add {
+	text-decoration:none;
+	cursor:pointer;
+	text-align:center;
+	padding:5px;
+	background:#333;
+	color:#FFF;
+}
+
+/******************************* SSX UPLOAD DIALOG ***********************/
+#ssx_dialog_upload
+{
+	position:absolute;
+	z-index:10000;
+	background:#dfdfdf;
+	border:1px solid #bdbdbd;
+	padding:10px;
+	width:300px;
+	height:150px;
+	display:none;
+}
+
+#ssx_dialog_close
+{
+	float:right;
+}
+
+/************/
+.box_warning
+{
+	padding:10px;
+	margin:10px 0;
+	background:#f2b7ac;
+	border:1px solid #d6624b;
+}
+
+
+/*Dashboard*/
+
+/*
+ * Base structure
+ */
+
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  /*padding-top: 50px;*/
+}
+
+.form-login{
+	color : #FFF;
+}
+.form-login .btn-link{
+	color: #428bca !important;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+.sub-header {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+/*
+ * Top navigation
+ * Hide default border to remove 1px line.
+ */
+.navbar-fixed-top {
+  border: 0;
+}
+
+/*
+ * Sidebar
+ */
+
+/* Hide for mobile, show later */
+.sidebar {
+  display: none;
+}
+@media (min-width: 768px) {
+  .sidebar {
+    position: fixed !important;
+    top: 30px;
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
+    display: block;
+    padding: 20px;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    background-color: #f5f5f5;
+    background-color: #222;
+    border-right: 1px solid #eee;
+  }
+}
+
+/* Sidebar navigation */
+.nav-sidebar {
+  margin-right: -21px; /* 20px padding + 1px border */
+  /*margin-bottom: 20px;*/
+  margin-left: -20px;
+}
+
+.nav-sidebar > li{
+	background-color: #222;
+}
+
+.nav-sidebar > li > a {
+  padding-right: 20px;
+  padding-left: 20px;
+  color: #222;
+}
+
+
+.nav-sidebar > .active > a,
+.nav-sidebar > .active > a:hover,
+.nav-sidebar > .active > a:focus {
+  color: #777;
+  background-color: #222;
+}
+
+/*
+	css menu open
+*/
+.nav-sidebar.open > .active > a,
+.nav-sidebar.open > .active > a:hover
+{
+  color: #FFF;
+  background-color: #111;	
+  font-weight: bolder;
+}
+
+.nav-sidebar.open > .submenu > a{
+	color: #A0A0A0;
+}
+
+.nav-sidebar.open > .submenu:hover{
+	color: #ddd;
+}
+.nav-sidebar > .active > a:hover{
+  color: #FFF;
+}
+.nav-sidebar.open > .submenu > a{
+	/*margin-left: 15px;*/
+	background-color: #515151 !important;
+}
+.nav-sidebar.open > .submenu > a:hover{
+	color: #fff !important;	
+	font-weight: bolder;
+}	
+
+
+.nav-sidebar.open > .submenu{
+	background-color: #222;
+}
+
+.sidebar h4{
+	color:#FFF;
+}
+
+.sidebar form{
+	color:#FFF;
+	margin-top: 15%;
+}
+
+.nav-sidebar.open .sub_active a{
+	color: #fff !important;	
+	font-weight: bolder;
+}
+
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+@media (min-width: 768px) {
+  .main {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+}
+.main .jumbotron{
+	border-radius: 6px;
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*
+	Ajustes no menu lateral
+*/
+
+.submenu{
+	display: none;
+}
+
+
+
+.carousel-control.left, .carousel-control.right {
+  background: none !important;
+  filter: progid: none !important;
+  outline: 0;
+ }
+/*.carousel .carousel-control {
+  visibility: hidden;
+}
+*//*.carousel:hover .carousel-control {
+  visibility: visible;
+}*/
+
+.modal-audios .modal-body{
+	height: 450px;
+	overflow-y: scroll;
+}
+/*.table-fixed{
+  width: 100%;
+  background-color: #f3f3f3;
+  
+  thead,tbody,tr,td,th{
+    display:block;
+  }
+  tbody{
+    td{
+      float:left;
+    }
+  }
+  thead {
+    tr{
+      th{
+        float:left;
+       background-color: #f39c12;
+       border-color:#e67e22;
+      }
+    }
+  }
+}
+*/
+
+.autocomplete-content{
+	z-index: 10000;
+    border: 1px solid #ccc;
+    /*border-radius: 5px;*/
+    padding: 0 0 0 15px;
+    position: absolute;
+    width: 94.8%;
+    background-color: white;
+    display: none;
+}
+.autocomplete-content p{
+	margin: 10px 0;
+}
+
+.no-padding{
+	padding: 0px;
+}
+
+
+.form-forgot-password,.form-forgot-password-m{
+	display: none;
+}
+
+.form-new-password,.form-login-m,.form-forgot-password-m label{
+	color: #FFF;
+}
+
+.link-color{
+	color: #428bca !important;
+}
+
+.navbar-collapse{
+	margin-top:15px;
+}

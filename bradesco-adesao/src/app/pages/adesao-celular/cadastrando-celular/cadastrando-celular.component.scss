@@ -1,0 +1,138 @@
+.padrao-margem {
+  padding: 18px;
+}
+
+.cadastrar {
+  h1 {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 29px;
+    margin-bottom: 25px;
+    color: #000000;
+    font-family: "Montserrat", sans-serif;
+  }
+  p {
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 50px;
+    line-height: 23px;
+    color: #47484c;
+    margin-top: 8px;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  .two-name {
+    position: relative;
+    a {
+      position: absolute;
+      right: 0;
+      top: 14px;
+      color: #3a68fa;
+      font-weight: 500;
+      font-size: 16px;
+      text-decoration: none;
+      font-family: "Montserrat", sans-serif;
+    }
+  }
+}
+
+/*label float*/
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  width: calc(100%);
+}
+
+.label-float input {
+  border: 0;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -webkit-appearance: none;
+  border-radius: 0;
+  height: 25px;
+  width: 100%;
+  border-bottom: 1px solid #c7c9cc;
+  color: #a7a7ab;
+  font-weight: 500;
+}
+
+.label-float input:focus {
+  border-bottom: 2px solid #3a68fa;
+}
+
+.label-float input::placeholder {
+  color: transparent;
+}
+
+.label-float label {
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+
+  color: #a7a7ab;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+
+.label-float input:required:invalid + label {
+  color: red;
+}
+.label-float input:focus:required:invalid {
+  border-bottom: 2px solid red;
+}
+.label-float input:required:invalid + label:before {
+  content: "*";
+}
+.label-float input:focus + label,
+.label-float input:not(:placeholder-shown) + label {
+  margin-top: 0;
+  color: #a7a7ab;
+  font-size: 12px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+/*label float*/
+
+.modal {
+  .bg {
+    background: rgba(29, 29, 29, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    
+  }
+  .box{
+    background: #FFF;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 15px 15px 0px 0px;
+    padding: 48px 32px 0px 32px;
+    h2{
+      font-size: 20px;
+      margin: 0;
+    }
+    p{
+      font-size: 14px;
+      color: #47474B;
+      margin: 16px 0 29px 0;
+      font-weight: 600;
+    }
+  }
+}

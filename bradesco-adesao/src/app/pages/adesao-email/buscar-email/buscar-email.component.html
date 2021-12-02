@@ -1,0 +1,73 @@
+<app-header [titleHeader]="appTitle" [profImg]="profilePic"></app-header>
+
+<div *ngIf='showFirstInput' class="buscar-pais padrao-margem">
+
+    <label class="input-padrao">
+
+        <svg class="icon-voltar" xmlns="http://www.w3.org/2000/svg" width="18.29" height="8.06"
+            viewBox="0 0 18.29 8.06">
+            <g id="Grupo_208" data-name="Grupo 208" transform="translate(-994.251 6963.826)">
+                <path id="Caminho_153" data-name="Caminho 153" d="M1045.516-6950.171h-17.172"
+                    transform="translate(-33.476 -9.624)" fill="none" stroke="#3a68fa" stroke-linecap="round"
+                    stroke-width="1" />
+                <path id="Caminho_154" data-name="Caminho 154" d="M0,2.874,3.332,0,6.65,2.874"
+                    transform="translate(994.751 -6956.471) rotate(-90)" fill="none" stroke="#3a68fa"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+            </g>
+        </svg>
+
+        <svg (click)='deleteNum()' class="icon-fechar" xmlns="http://www.w3.org/2000/svg" width="19.195" height="19.092"
+            viewBox="0 0 19.195 19.092">
+            <g id="Grupo_209" data-name="Grupo 209" transform="translate(-5849.489 4003.233) rotate(45)">
+                <line id="Linha_3" data-name="Linha 3" y2="25" transform="translate(1319.073 -6979.5)" fill="none"
+                    stroke="#3a68fa" stroke-linecap="round" stroke-width="1" />
+                <line id="Linha_4" data-name="Linha 4" x1="25" transform="translate(1306.5 -6966.927)" fill="none"
+                    stroke="#3a68fa" stroke-linecap="round" stroke-width="1" />
+            </g>
+        </svg>
+
+        <span>{{ area }}</span>
+
+        <input id="input1" type="text" class="form-control" placeholder="E-mail">
+
+ 
+    </label>
+
+    <div class="btn">
+        <app-btn disabled="0" label="Continuar" nextPage="/cadastrando-email"></app-btn>
+    </div>
+
+</div>
+
+<div *ngIf='showFirstInput == false' class="buscar-pais padrao-margem">
+
+    <label>
+        <svg (click)='showFirstInput = true' class="icon-voltar" xmlns="http://www.w3.org/2000/svg" width="18.29"
+            height="8.06" viewBox="0 0 18.29 8.06">
+            <g id="Grupo_208" data-name="Grupo 208" transform="translate(-994.251 6963.826)">
+                <path id="Caminho_153" data-name="Caminho 153" d="M1045.516-6950.171h-17.172"
+                    transform="translate(-33.476 -9.624)" fill="none" stroke="#3a68fa" stroke-linecap="round"
+                    stroke-width="1" />
+                <path id="Caminho_154" data-name="Caminho 154" d="M0,2.874,3.332,0,6.65,2.874"
+                    transform="translate(994.751 -6956.471) rotate(-90)" fill="none" stroke="#3a68fa"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="1" />
+            </g>
+        </svg>
+
+        <svg (click)='deletePais()' class="icon-fechar" xmlns="http://www.w3.org/2000/svg" width="19.195" height="19.092"
+            viewBox="0 0 19.195 19.092">
+            <g id="Grupo_209" data-name="Grupo 209" transform="translate(-5849.489 4003.233) rotate(45)">
+                <line id="Linha_3" data-name="Linha 3" y2="25" transform="translate(1319.073 -6979.5)" fill="none"
+                    stroke="#3a68fa" stroke-linecap="round" stroke-width="1" />
+                <line id="Linha_4" data-name="Linha 4" x1="25" transform="translate(1306.5 -6966.927)" fill="none"
+                    stroke="#3a68fa" stroke-linecap="round" stroke-width="1" />
+            </g>
+        </svg>
+
+        <input id="input2" type="text" class="form-control pais" placeholder="Buscar país" [(ngModel)]="term">
+
+    </label>
+
+ 
+
+</div>

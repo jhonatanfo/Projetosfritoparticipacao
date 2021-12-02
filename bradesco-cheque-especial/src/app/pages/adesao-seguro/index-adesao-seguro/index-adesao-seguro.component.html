@@ -1,0 +1,20 @@
+<modal-index>
+    <div *ngIf='exibir'>
+        <span class="modal-title">Você tem cheque especial disponível pra contratação</span>
+        <small class="subTxt">O valor de <b>R$ 1.000</b> já está pré-aprovado.</small>
+
+        <div class="btns">
+            <btn (click)="clickVerify($event)" title="Quero saber mais" btnConfirmText="Quero saber mais" btnClass="btn-red mb-16"></btn>
+            <btn (click)="clickVerify($event)" title="Não, obrigado" btnConfirmText="Não, obrigado" btnClass="btn-border"></btn>
+        </div>
+    </div>
+
+    <div *ngIf='exibir == false'>
+        <span class="modal-title unique">Se mudar de ideia, contrate por aqui :)</span>
+
+        <div class="btns">
+            <btn (click)="clickVerify($event)" title="Ok, entendi" btnConfirmText="Ok, entendi" btnClass="btn-red mb-16"></btn>
+        </div>
+    </div>
+
+</modal-index>

@@ -1,0 +1,36 @@
+<div class="bg-episodios">
+
+    <div class="row">
+
+        <div class="col-md-5 left">
+            <h2>Episódios<br><span>Disponíveis.</span></h2>
+        </div>
+
+        <div class="col-md-7 right">
+
+            <div class="client-feedback">
+
+                <ngx-slick-carousel class="feedback" [config]="sliderConfig">
+                    <div ngxSlickItem *ngFor="let episodioslide of episodioslides">
+                        <a [href]="episodioslide.videoURL" data-lity>
+                            <img src="{{ episodioslide.img }}" alt="" class="img-destaque">
+                        </a>
+
+                        <div class="txt">
+                            <span>ep.</span>
+                            <b class="numb">{{ episodioslide.ep }}</b>
+                            <h2 [innerHtml]='episodioslide.titulo'></h2>
+                            <hr>
+                            <p>{{ episodioslide.texto }}</p>
+                        </div>
+
+                    </div>
+                </ngx-slick-carousel>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>

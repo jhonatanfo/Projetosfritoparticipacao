@@ -1,0 +1,139 @@
+#nuvens {
+  background-color: #FED959;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 0;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+}
+
+#nuvens.verde {
+  background-color: #C2CF49;
+}
+
+#nuvens.azul {
+  background-color: #54CBE9;
+}
+
+#nuvens.vermelho {
+  background-color: #FC845F;
+}
+
+#nuvens.amarelo {
+  background-color: #FED959;
+}
+
+#nuvens.amarelo-claro {
+  background-color: #FEE17F;
+}
+
+#nuvens .nuvem {
+  display: block;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  animation-timing-function: linear;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+#nuvens .nuvem1 {
+  background-image: url('img/nuvens/nuvem1.png');
+  width: 37.917vw;
+  height: 21.181vw;
+  top: 0;
+  left: -38vw;
+  animation-name: vento1;
+  animation-duration: 25s;
+}
+#nuvens .nuvem2 {
+  background-image: url('img/nuvens/nuvem2.png');
+  width: 29.792vw;
+  height: 16.181vw;
+  top: 35vh;
+  left: -30vw;
+  animation-name: vento2;
+  animation-duration: 27s;
+  animation-delay: 5s;
+}
+#nuvens .nuvem3 {
+  background-image: url('img/nuvens/nuvem3.png');
+  width: 34.167vw;
+  height: 15.972vw;
+  top: 43vh;
+  left: -35vw;
+  animation-name: vento3;
+  animation-duration: 30s;
+  animation-delay: 13s;
+}
+#nuvens .nuvem4 {
+  background-image: url('img/nuvens/nuvem4.png');
+  width: 37.917vw;
+  height: 12.222vw;
+  top: 63vh;
+  left: -38vw;
+  animation-name: vento4;
+  animation-duration: 20s;
+  animation-delay: 9s;
+}
+#nuvens .nuvem5 {
+  background-image: url('img/nuvens/nuvem5.png');
+  width: 13.75vw;
+  height: 7.222vw;
+  top: 20vh;
+  left: -14vw;
+  animation-name: vento5;
+  animation-duration: 40s;
+}
+#nuvens .nuvem6 {
+  background-image: url('img/nuvens/nuvem6.png');
+  width: 14.722vw;
+  height: 8.125vw;
+  top: 73vh;
+  left: -15vw;
+  animation-name: vento6;
+  animation-duration: 45s;
+  animation-delay: 6s;
+}
+#nuvens .nuvem7 {
+  background-image: url('img/nuvens/nuvem7.png');
+  width: 26.806vw;
+  height: 11.398vw;
+  left: -27vw;
+  top: 80vh;
+  animation-name: vento7;
+  animation-duration: 25s;
+  animation-delay: 3s;
+}
+
+@keyframes vento1 {
+  from { left: -38vw; }
+  to { left: 100vw; }
+}
+@keyframes vento2 {
+  from { left: -30vw; }
+  to { left: 100vw; }
+}
+@keyframes vento3 {
+  from { left: -34.5vw; }
+  to { left: 100vw; }
+}
+@keyframes vento4 {
+  from { left: -38vw; }
+  to { left: 100vw; }
+}
+@keyframes vento5 {
+  from { left: -14vw; }
+  to { left: 100vw; }
+}
+@keyframes vento6 {
+  from { left: -15vw; }
+  to { left: 100vw; }
+}
+@keyframes vento7 {
+  from { left: -27vw; }
+  to { left: 100vw; }
+}

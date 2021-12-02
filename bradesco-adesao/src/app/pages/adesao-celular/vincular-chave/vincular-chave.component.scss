@@ -1,0 +1,38 @@
+h1 {
+  margin-top: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.btns {
+  margin-top: 40px;
+  margin-left: 16px;
+
+  .btn {
+    border-radius: 24px;
+    color: #3b69ff;
+    border-radius: 24px;
+    border: solid 1px #3b69fa;
+    padding-top: 12px;
+    padding: 12px 0px 12px 0px;
+    font-size: 14px;
+    line-height: 1.29;
+    font-weight: bold;
+    margin-right: 16px;
+    width: calc(50% - 18px);
+    display: block;
+    text-align: center;
+    float: left;
+
+    &.active {
+      color: #ffffff;
+      background: #3b69ff;
+    }
+  }
+}

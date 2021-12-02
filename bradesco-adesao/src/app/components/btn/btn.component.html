@@ -1,0 +1,13 @@
+<div [class]="'btn-cont ' + class">
+  <button [routerLink]='nextPage' *ngIf="disabled == 0">
+    {{ label }}
+  </button>
+
+  <button class="disable" *ngIf="disabled == 1" disabled>
+    {{ label }}
+  </button>
+
+  <button [routerLink]='lastPage' class="btn-none" *ngIf="btnType">
+    {{ secondLabel }}
+  </button>
+</div>

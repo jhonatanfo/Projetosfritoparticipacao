@@ -1,0 +1,160 @@
+nav {
+  font-family: $font-pluto-cond;
+  font-weight: bold;
+  font-size: 16px;
+  @media(min-width: 992px) and (max-width: 1199px) {
+    font-size: 14px;
+  }
+  @media(min-width: 768px) and (max-width: 991px) {
+    font-size: 12px;
+  }
+
+  @media(min-width: 0px) and (max-width: 767px) {
+    font-size: 18px;
+  }
+  .logo {
+    background: url(../default/img/svg/logo.svg);
+    height: 105px;
+    width: 225px;
+    display: block;
+    background-size: contain;
+    background-repeat: no-repeat;
+    @media(min-width: 992px) and (max-width: 1199px) {
+      height: 84px;
+      width: 192px;
+    }
+    @media(min-width: 768px) and (max-width: 991px) {
+      height: 59px;
+      width: 140px;
+    }
+    @media(min-width: 0px) and (max-width: 767px) {
+      z-index: 3;
+      position: relative;
+      height: 59px;
+      width: 140px;
+    }
+  }
+
+  &#mainNav {
+    background: $azul-nav;
+    height: 80px;
+    padding: 8px 0;
+    @media(min-width: 992px) and (max-width: 1199px) {
+      height: 70px; 
+    }
+    @media(min-width: 0px) and (max-width: 991px) {
+      height: 55px;
+    }
+  }
+
+  .navbar-brand {
+    height: 121px;
+    padding: 10px 15px;
+    @media(min-width: 0px) and (max-width: 991px) {
+      height: 65px;
+      padding: 10px 0;
+    }
+  }
+  
+  .nav > li > a:hover,
+  .nav > li > a:focus {
+    background: inherit;
+  }
+
+  .navbar-nav > li > a{
+    padding: 12px 19px;
+    @media(min-width: 992px) and (max-width: 1199px) {
+      padding: 12px;
+    }
+    @media(min-width: 768px) and (max-width: 991px) {
+      padding: 0 8px;
+    }
+
+    @media(min-width: 0px) and (max-width: 767px) {
+      padding: 7px 8px;
+      text-align: center;
+    }
+
+  }
+
+  li {
+    margin-top: 10px;
+    a {
+      color: $branco;
+    }
+  }
+
+  .btn-nav {
+    background: #ee4051;
+    border-radius: 10px;
+    opacity: 1;
+  }
+
+  .btn-nav:hover {
+    background: #ee4051;
+    border-radius: 10px;
+    color: $branco;
+  }
+}
+
+
+.navbar-toggle{
+  z-index: 2;
+  position: relative;
+  width: 53px;
+  height: 38px;
+  margin-top: 0;
+}
+
+.nav-tgl span{
+  width: 100%;
+  height: 3px;
+  float: left;
+  background: #273572;
+  margin: 2px 0;
+  &:after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    float: left;
+    background: #273572;
+    margin-top: 8px;
+  }
+  &:before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    float: left;
+    background: #273572;
+    margin-top: -8px;
+  }
+}
+
+.navbar-nav{
+  float: right;
+  @media(min-width: 0px) and (max-width: 767px) {
+    float: inherit;
+    background: #4d76b2;
+    position: fixed;
+    top: 55px;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 100vh;   
+  }
+}
+ 
+
+@media(min-width: 0px) and (max-width: 767px) {
+.principal{
+  z-index: 2;
+  padding-top: 30px;
+  padding-right: 30px;
+  padding-left: 30px;
+  }
+}
+
+.navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+  max-height: 100vh;
+  height: 100vh;
+}

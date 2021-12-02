@@ -1,0 +1,9 @@
+# BEGIN Ssx
+<IfModule mod_rewrite.c>
+php_value upload_max_filesize 20M
+php_value post_max_size 20M
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule !\.(ico|js|gif|jpeg|jpg|png|css|swf|flv)$ index.php
+</IfModule>
+# END Ssx

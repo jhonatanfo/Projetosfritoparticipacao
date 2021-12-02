@@ -1,0 +1,53 @@
+<app-header [titleHeader]="appTitle" [profImg]="profilePic"></app-header>
+
+<div class="alert">
+  <div class="icon">
+    <i class="success"></i>
+  </div>
+
+  <div class="text">
+    <h1>E-mail cadastrado como <br>chave!</h1>
+    <p>É só usá-lo na hora de pagar e receber</p>
+  </div>
+</div>
+
+<div class="content">
+  <p>
+    Número do celular <br>
+    <b>+55 11 99876 5432</b>
+  </p>
+
+  <p>
+    Tipo de conta <br>
+    <b>Conta-Corrente</b>
+  </p>
+
+  <p>
+    E-mail <br>
+    <b>reble@reble.com.br</b>
+  </p>
+
+  <p>
+    Tipo de conta <br>
+    <b>Conta-Corrente</b>
+  </p>
+
+  <hr>
+
+</div>
+
+<div class="card-long">
+  <div class="icon-space">
+    <i class="btn amigos"></i>
+  </div>
+
+  <div class="content">
+    <h1 class="card-title">Convidar amigos</h1>
+  </div>
+</div>
+
+<div class="content">
+  <app-btn nextPage="/dados-encerrar-email-celular" class="btn-cont btn-modal" [disabled]="0" label="Continuar"
+    secondLabel="Cadastrar depois" btnType=true>
+  </app-btn>
+</div>

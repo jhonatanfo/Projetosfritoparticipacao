@@ -1,0 +1,218 @@
+ .cadastre-se{
+  &.bg{
+    .page-header{
+      display: inline-block;
+      width: 100%;
+    }
+
+    .option-cadastre{
+      font-family: $font-pluto;
+      background: #E33F4B 0% 0% no-repeat padding-box;
+      border-radius: 19px;
+      letter-spacing: -0.93px;
+      color: #FFFFFF;
+      margin: 0 auto;
+      left: 0;
+      right: 0;
+      text-align: center;
+      display: block;
+      padding: 30px 0;
+      font-size: 19px;
+      text-decoration: none;
+      width: 350px;
+      padding-left: 40px;
+      font-weight: 900;
+      line-height: 0px;
+      margin-bottom: 50px;
+      @media screen and (max-width: 991px) and (min-width: 768px) {
+        font-size: 17px;
+        width: 319px;
+        font-weight: 500;
+      }
+      @media screen and (max-width: 767px) and (min-width: 0px) {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 500;
+      }
+      &.left{
+        float: right;
+      }
+      &.right{
+        float: left;
+      }
+      .icon-facebook{
+        background: url(../default/img/icon-facebook.png) center no-repeat;
+        background-size: cover;
+        width: 33px;
+        height: 28px;
+        position: absolute;
+        margin-left: -36px;
+        margin-top: -15px;
+      }
+      .icon-gmail{
+        background: url(../default/img/icon-gmail.png) center no-repeat;
+        background-size: cover;
+        width: 25px;
+        height: 25px;
+        position: absolute;
+        margin-left: -40px;
+        margin-top: -13px;
+      }
+    }
+    .ou{
+      font-family: $font-pluto;
+      width: 100%;
+      text-align: center;
+      font-weight: 400;
+      font-size: 20px;
+      color: #273172;
+      margin: 0;
+      display: inline-block;
+      &:after {
+        content: "";
+        width: 46%;
+        height: 1px;
+        background: #273172;
+        float: right;
+        margin: 11px 0;
+        @media screen and (max-width: 767px) and (min-width: 0px) {
+          width: 40%;
+        }
+      }
+      &:before {
+        content: "";
+        width: 46%;
+        height: 1px;
+        background: #273172;
+        float: left;
+        margin: 12px 0;
+        @media screen and (max-width: 767px) and (min-width: 0px) {
+          width: 40%;
+        }
+      }
+    }
+
+    form{
+      margin: 50px 0;
+      .form{
+        height: 100%;
+        background: rgba(255, 255, 255, 0.4) 0% 0% no-repeat padding-box;
+        border-radius: 11px;
+        padding: 60px 50px;
+        display: inline-block;
+        @media screen and (max-width: 767px) and (min-width: 0px) {
+          padding: 15px;
+        }
+        .group-input {
+          margin-bottom: 25px;
+          margin-top: 25px;
+        }
+        label {
+          font-family: $font-pluto;
+          font-weight: bold;
+          color: #22397d;
+          font-size: 18px;
+          width: 100%;
+          @media screen and (max-width: 767px) and (min-width: 0px) {
+            font-size: 15px;
+          }
+        }
+        input{
+          border: none;
+          background: none;
+          border-bottom: 2px solid #273172;
+          width: 100%;
+          outline: 0;
+        }
+        p.erro,
+        .erro-existe{
+          display: none;
+        }      
+      }
+      .checkbox{
+        .padrao{
+          padding: 0;
+        }
+        
+        .check{
+          font-size: 12px;
+          letter-spacing: 0;
+          color: #273172;
+          font-weight: 500;
+        }  
+        p{
+          font-size: 12px;
+          letter-spacing: 0;
+          color: #273172;
+          font-weight: 500;
+          margin: 2px 0 0 0;
+        }
+      }
+      .btn-cadastra{
+        margin: 0 auto;
+        display: block;
+        margin-top: 52px;
+        position: relative;
+        border: none;
+        color: #FFFFFF;
+        width: 200px;
+        height: 52px;
+        background: #E33F4B 0% 0% no-repeat padding-box;
+        border-radius: 19px;
+        opacity: 1;
+        font-weight: 500;
+      }
+    }
+  }
+ }
+
+
+ //new input
+ input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #fff;
+  background: #FFFFFF;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 16px;
+  height: 20px;
+  margin-right: 13px;
+  color: transparent;
+  transition: .2s;
+  font-size: 12px;
+  line-height: 19px;
+  text-align: center;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+ //new input

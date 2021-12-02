@@ -1,0 +1,93 @@
+<app-header [titleHeader]="appTitle" [profImg]="profilePic"></app-header>
+
+<div class="cont">
+    <svg class="qr-svg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="121" height="122" viewBox="0 0 121 122"><defs><clipPath id="a"><path d="M202-346h38v-37H202Zm4-5h28v-26H206Zm-43-32v10.4h11.2v5.2H185.4V-357H191v-20.8H168.6V-383Zm-44,37h38v-37H119Zm6-5h28v-26H125Zm87-6h16v-16H212Zm-81,0h16v-16H131Zm32-4h6v-6h-6Zm17.29,5v10.5h-5.43v5.247h-5.43V-345.5H164v10.5h5.43v5.247H164v5.248h10.86v-10.5h10.851v10.5H180.29V-293h5.421v-10.494H202V-314h-5.43v5.246H185.711V-324.5h5.43v-10.5h5.429v-15.75H185.711V-356ZM179-341h6v-6h-6Zm-11-10h6v-6h-6Zm60,16v5.2h6v5.2h-6v5.206h6v5.2h-6v5.2h6v-5.2h6V-335Zm-10.666,0v5.5H212v5.5h16v-5.5h-5.334V-335ZM201-329h6v-6h-6Zm-54-6v5.2h-5.5v5.2H147v5.206H136v5.2h5.5v5.2h22v-5.2H169v-5.2H158v5.2h-5.5v-5.2H158V-324.6h-5.5v-5.2h11V-335Zm-17,6h12v-6H130Zm-11,0h6v-6h-6Zm87,5v31.5h11.2v5.255h-5.6V-271.5h5.6v5.247h5.6V-261h5.6v-10.5h-5.6v-5.247H234V-292.5H222.8v-5.246h-5.6v-10.5h-5.6V-324Zm12,48h6v-11h-6Zm-21-43h6v-6h-6Zm-72,0h6v-6h-6Zm93,5h6v-6h-6Zm-99,0h6v-6h-6Zm6,5h6v-6h-6Zm38,6v16.5h10.667v5.5H179v-11H168.333v-11Zm-44,42h38v-37H119Zm6-6h28v-26H125Zm59.851-20v10.4H174v5.2h10.851v5.2h10.859v5.2H212v-10.4h-5.429v-10.4h-5.43v10.4H190.281V-287ZM131-271h16v-16H131Zm32,0h6v-11h-6Zm71,5h6v-6h-6Zm-65.667-6v5.5H163v5.5h16v-5.5h-5.333V-272Z" clip-rule="evenodd"/></clipPath><clipPath id="b"><path d="M0,563H360V-490H0Z"/></clipPath></defs><g transform="translate(-119 383)" clip-path="url(#a)"><g clip-path="url(#b)"><path d="M114-388H245v132H114Z"/></g></g></svg>
+    <h1>Meu QR Code <i class="help"></i></h1>
+    <p>Celular: +55 11 99245 2244</p>
+    <!-- <p>E-mail: reble@reble.com.br</p> -->
+    <span>Compartilhar meus dados</span>
+</div>
+
+<!-- <div class="card">
+    <i class="icon-btn icon-1"></i>
+    <span>Transferir</span>
+</div> -->
+
+<div class="card">
+
+    <svg class="icon-btn icon-3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 42" width="43" height="42">
+        <defs>
+            <image width="43" height="42" id="img1" href="data:image/png;base64,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"/>
+        </defs>
+        <style>
+            tspan { white-space:pre }
+        </style>
+        <use id="Background" href="#img1" x="0" y="0" />
+    </svg>
+
+    <span>Receber</span>
+</div>
+<div class="card">
+    
+    <svg class="icon-btn icon-2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 43 42" width="43" height="42">
+        <defs>
+            <image width="43" height="42" id="img2" href="data:image/png;base64,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"/>
+        </defs>
+        <style>
+            tspan { white-space:pre }
+        </style>
+        <use id="Background" href="#img2" x="0" y="0" />
+    </svg>
+
+    <span>Pagar</span>
+</div>
+
+<div class="card-long mgtop">
+    <div class="icon-space">
+        <i class="btn pen"></i>
+    </div>
+
+    <div class="content">
+        <h1 class="card-title">Editar meus dados</h1>
+    </div>
+</div>
+
+<div class="card-long">
+    <div class="icon-space">
+        <i class="btn notificacoes"></i>
+    </div>
+
+    <div class="content">
+        <h1 class="card-title">Notificações</h1>
+    </div>
+</div>
+
+<div class="card-long">
+    <div class="icon-space">
+        <i class="btn limite"></i>
+    </div>
+
+    <div class="content">
+        <h1 class="card-title">Alterar limite</h1>
+    </div>
+</div>
+
+<div class="card-long">
+    <div class="icon-space">
+        <i class="btn contatos"></i>
+    </div>
+
+    <div class="content">
+        <h1 class="card-title">Minha lista de contatos</h1>
+    </div>
+</div>
+
+<div class="card-long">
+    <div class="icon-space">
+        <i class="btn amigos"></i>
+    </div>
+
+    <div class="content">
+        <h1 class="card-title">Convidar amigos</h1>
+    </div>
+</div>

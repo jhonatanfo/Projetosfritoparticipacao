@@ -1,0 +1,104 @@
+.bg.faq {
+
+  // General
+  input {
+    position: absolute;
+    opacity: 1;
+    z-index: -1;
+  }
+
+  /* Accordion styles */
+  .tabs {
+    overflow: hidden;
+  }
+
+  .tab {
+    font-size: calcRem(16px);
+    width: 100%;
+    color: #273172;
+    overflow: hidden;
+    margin-bottom: 10px;
+    border-radius: 20px;
+
+    &-label {
+      margin-bottom: 0 !important;
+      display: flex;
+      justify-content: space-between;
+      padding: 1em;
+      background: #6aa7e5;
+      font-weight: bold;
+      cursor: pointer;
+      line-height: 30px;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      &::after {
+        content: "\276F";
+        width: 33px;
+        height: 33px;
+        text-align: center;
+        transition: all 0.35s;
+        transform: rotate(90deg);
+        color: #273172;
+        border-radius: 100%;
+        padding: 0px;
+        @media (min-width: 0px) and (max-width: 991px) {
+          border: none;
+        }
+      }
+    }
+
+    &-content {
+      max-height: 0;
+      padding: 0 1em;
+      color: #273172;
+      background: $branco;
+      transition: all 0.35s;
+      width: 98%;
+      margin-left: 10px;
+      border-bottom-left-radius: 15px;
+      border-bottom-right-radius: 15px;
+    }
+
+    &-close {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1em;
+      font-size: 0.75em;
+      background: $branco;
+      cursor: pointer;
+    }
+
+    .tab-label {
+      font-weight: bold;
+    }
+
+    .tab-content {
+      font-weight: 500;
+    }
+  }
+
+  input:checked {
+    + .tab-label {
+      background: #6aa7e5;
+      &::after {
+        transform: rotate(-90deg);
+      }
+    }
+    ~ .tab-content {
+      max-height: 100vh;
+      padding: 0 1em 1em 1em;
+      p {
+        font-size: 16px;
+      }
+      @media (min-width: 0px) and (max-width: 991px) {
+        font-size: 16px;
+        line-height: 17px;
+      }
+    }
+  }
+
+  input[type="checkbox"] {
+    margin: 22px 55px 0;
+  }
+}

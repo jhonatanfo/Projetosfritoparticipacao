@@ -1,0 +1,262 @@
+.space {
+  margin-top: 130px;
+}
+
+.img1 {
+  left: 0px;
+  position: absolute;
+}
+
+.img2 {
+  right: 0px;
+  position: absolute;
+}
+
+.row {
+  margin-top: 50px;
+}
+
+.icon-size {
+  height: 50px;
+  width: 50px;
+  display: block;
+
+  &.nota {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%220.5%22%20x2%3D%220.5%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ec1940%22/%3E%3Cstop%20offset%3D%220.146%22%20stop-color%3D%22%23e51a44%22/%3E%3Cstop%20offset%3D%220.357%22%20stop-color%3D%22%23d21e50%22/%3E%3Cstop%20offset%3D%220.609%22%20stop-color%3D%22%23b22464%22/%3E%3Cstop%20offset%3D%220.89%22%20stop-color%3D%22%23862c7f%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2373308b%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20transform%3D%22translate%28-9300%202461%29%22%3E%3Cg%20transform%3D%22translate%288372%20-3524%29%22%3E%3Cpath%20d%3D%22M9%2C0H39a9%2C9%2C0%2C0%2C1%2C9%2C9V39a9%2C9%2C0%2C0%2C1-9%2C9H9a9%2C9%2C0%2C0%2C1-9-9V9A9%2C9%2C0%2C0%2C1%2C9%2C0Z%22%20transform%3D%22translate%28928%201063%29%22%20fill%3D%22url%28%23a%29%22/%3E%3Cpath%20d%3D%22M8.639%2C0h28.8a8.639%2C8.639%2C0%2C0%2C1%2C8.639%2C8.639v28.8a8.639%2C8.639%2C0%2C0%2C1-8.639%2C8.639H8.639A8.639%2C8.639%2C0%2C0%2C1%2C0%2C37.435V8.639A8.639%2C8.639%2C0%2C0%2C1%2C8.639%2C0Z%22%20transform%3D%22translate%28928.963%201063.963%29%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M39.7%2C19.259a3.787%2C3.787%2C0%2C0%2C0%2C4.33%2C0%2C2.209%2C2.209%2C0%2C0%2C0%2C.955-1.764V4.4a.4.4%2C0%2C0%2C0-.517-.379L33.082%2C7.634a.4.4%2C0%2C0%2C0-.276.379v11.46l-.262-.181a3.8%2C3.8%2C0%2C0%2C0-4.231.071%2C2.107%2C2.107%2C0%2C0%2C0%2C0%2C3.529%2C3.787%2C3.787%2C0%2C0%2C0%2C4.33%2C0%2C2.209%2C2.209%2C0%2C0%2C0%2C.955-1.764v-9L44.189%2C8.761V15.84l-.262-.181a3.8%2C3.8%2C0%2C0%2C0-4.231.071%2C2.107%2C2.107%2C0%2C0%2C0%2C0%2C3.529Zm-7.6%2C3.052a2.873%2C2.873%2C0%2C0%2C1-1.614.468c-1.262%2C0-2.328-.756-2.328-1.652s1.066-1.652%2C2.328-1.652%2C2.328.756%2C2.328%2C1.652A1.458%2C1.458%2C0%2C0%2C1%2C32.092%2C22.311ZM33.6%2C11.294V8.3L44.189%2C4.936V7.93Zm8.268%2C4.548c1.262%2C0%2C2.328.756%2C2.328%2C1.652s-1.071%2C1.652-2.328%2C1.652-2.328-.756-2.328-1.652S40.6%2C15.842%2C41.866%2C15.842Z%22%20transform%3D%22translate%28914.08%201073.823%29%22%20fill%3D%22url%28%23a%29%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  &.mic {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%220.5%22%20x2%3D%220.5%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ec1940%22/%3E%3Cstop%20offset%3D%220.146%22%20stop-color%3D%22%23e51a44%22/%3E%3Cstop%20offset%3D%220.357%22%20stop-color%3D%22%23d21e50%22/%3E%3Cstop%20offset%3D%220.609%22%20stop-color%3D%22%23b22464%22/%3E%3Cstop%20offset%3D%220.89%22%20stop-color%3D%22%23862c7f%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2373308b%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20transform%3D%22translate%28-9287%202458%29%22%3E%3Cg%20transform%3D%22translate%288359%20-3521%29%22%3E%3Cpath%20d%3D%22M9%2C0H39a9%2C9%2C0%2C0%2C1%2C9%2C9V39a9%2C9%2C0%2C0%2C1-9%2C9H9a9%2C9%2C0%2C0%2C1-9-9V9A9%2C9%2C0%2C0%2C1%2C9%2C0Z%22%20transform%3D%22translate%28928%201063%29%22%20fill%3D%22url%28%23a%29%22/%3E%3Cpath%20d%3D%22M8.639%2C0h28.8a8.639%2C8.639%2C0%2C0%2C1%2C8.639%2C8.639v28.8a8.639%2C8.639%2C0%2C0%2C1-8.639%2C8.639H8.639A8.639%2C8.639%2C0%2C0%2C1%2C0%2C37.435V8.639A8.639%2C8.639%2C0%2C0%2C1%2C8.639%2C0Z%22%20transform%3D%22translate%28928.963%201063.963%29%22%20fill%3D%22%23fff%22/%3E%3Cg%20transform%3D%22translate%28378.194%20878.23%29%22%3E%3Cpath%20d%3D%22M569.089%2C336.933h10.356a.961.961%2C0%2C0%2C0%2C.96-.96%2C2.742%2C2.742%2C0%2C0%2C0-2.74-2.739H574.66v-2.6l.286-.026a7.277%2C7.277%2C0%2C0%2C0%2C6.588-7.235V321.6a.393.393%2C0%2C0%2C0-.787%2C0v1.766a6.48%2C6.48%2C0%2C1%2C1-12.961%2C0V321.6a.393.393%2C0%2C0%2C0-.787%2C0v1.766a7.277%2C7.277%2C0%2C0%2C0%2C6.588%2C7.235l.286.026v2.6h-3.005a2.742%2C2.742%2C0%2C0%2C0-2.739%2C2.739A.961.961%2C0%2C0%2C0%2C569.089%2C336.933Zm-.166-1.128a1.964%2C1.964%2C0%2C0%2C1%2C1.945-1.784h6.8a1.964%2C1.964%2C0%2C0%2C1%2C1.945%2C1.784l.029.342H568.894Z%22%20transform%3D%22translate%280%20-116.393%29%22%20fill%3D%22url%28%23a%29%22/%3E%3Cpath%20d%3D%22M616.435%2C197A4.44%2C4.44%2C0%2C0%2C0%2C612%2C201.435v5.543a4.435%2C4.435%2C0%2C1%2C0%2C8.87%2C0v-5.543A4.44%2C4.44%2C0%2C0%2C0%2C616.435%2C197Zm3.647%2C4.041h-2.024a.393.393%2C0%2C0%2C0%2C0%2C.787h2.025v2.046h-2.025a.393.393%2C0%2C0%2C0%2C0%2C.787h2.025v2.046h-2.025a.393.393%2C0%2C0%2C0%2C0%2C.787h2.012l-.1.393a3.648%2C3.648%2C0%2C0%2C1-7.067%2C0l-.1-.393h1.963a.393.393%2C0%2C0%2C0%2C0-.787h-1.977V204.66h1.977a.393.393%2C0%2C0%2C0%2C0-.787h-1.977v-2.046h1.977a.393.393%2C0%2C0%2C0%2C0-.787h-1.976l.083-.382a3.648%2C3.648%2C0%2C0%2C1%2C7.129%2C0Z%22%20transform%3D%22translate%28-42.168%29%22%20fill%3D%22url%28%23a%29%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+  }
+
+  &.voice {
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cdefs%3E%3ClinearGradient%20id%3D%22a%22%20x1%3D%220.5%22%20x2%3D%220.5%22%20y2%3D%221%22%20gradientUnits%3D%22objectBoundingBox%22%3E%3Cstop%20offset%3D%220%22%20stop-color%3D%22%23ec1940%22/%3E%3Cstop%20offset%3D%220.146%22%20stop-color%3D%22%23e51a44%22/%3E%3Cstop%20offset%3D%220.357%22%20stop-color%3D%22%23d21e50%22/%3E%3Cstop%20offset%3D%220.609%22%20stop-color%3D%22%23b22464%22/%3E%3Cstop%20offset%3D%220.89%22%20stop-color%3D%22%23862c7f%22/%3E%3Cstop%20offset%3D%221%22%20stop-color%3D%22%2373308b%22/%3E%3C/linearGradient%3E%3C/defs%3E%3Cg%20transform%3D%22translate%28-9236%202359%29%22%3E%3Cg%20transform%3D%22translate%288308%20-3422%29%22%3E%3Cpath%20d%3D%22M9%2C0H39a9%2C9%2C0%2C0%2C1%2C9%2C9V39a9%2C9%2C0%2C0%2C1-9%2C9H9a9%2C9%2C0%2C0%2C1-9-9V9A9%2C9%2C0%2C0%2C1%2C9%2C0Z%22%20transform%3D%22translate%28928%201063%29%22%20fill%3D%22url%28%23a%29%22/%3E%3Cpath%20d%3D%22M8.639%2C0h28.8a8.639%2C8.639%2C0%2C0%2C1%2C8.639%2C8.639v28.8a8.639%2C8.639%2C0%2C0%2C1-8.639%2C8.639H8.639A8.639%2C8.639%2C0%2C0%2C1%2C0%2C37.435V8.639A8.639%2C8.639%2C0%2C0%2C1%2C8.639%2C0Z%22%20transform%3D%22translate%28928.963%201063.963%29%22%20fill%3D%22%23fff%22/%3E%3Cpath%20d%3D%22M506.782%2C201.955v10.455a.6.6%2C0%2C1%2C1-1.2%2C0V201.955a.6.6%2C0%2C1%2C1%2C1.2%2C0Zm-10.183.272a.6.6%2C0%2C0%2C0-.6.6v8.713a.6.6%2C0%2C0%2C0%2C1.2%2C0v-8.713A.6.6%2C0%2C0%2C0%2C496.6%2C202.228Zm6.535.871a.6.6%2C0%2C0%2C0-.6.6v6.97a.6.6%2C0%2C1%2C0%2C1.2%2C0V203.7A.6.6%2C0%2C0%2C0%2C503.134%2C203.1Zm-3.05%2C1.743a.6.6%2C0%2C0%2C0-.6.6v3.485a.6.6%2C0%2C1%2C0%2C1.2%2C0v-3.485A.6.6%2C0%2C0%2C0%2C500.084%2C204.842Zm9.149-1.743a.6.6%2C0%2C0%2C0-.6.6v6.97a.6.6%2C0%2C1%2C0%2C1.2%2C0V203.7A.6.6%2C0%2C0%2C0%2C509.233%2C203.1Zm6.535-.871a.6.6%2C0%2C0%2C0-.6.6v8.713a.6.6%2C0%2C1%2C0%2C1.2%2C0v-8.713A.6.6%2C0%2C0%2C0%2C515.767%2C202.228Zm-3.485%2C2.614a.6.6%2C0%2C0%2C0-.6.6v3.485a.6.6%2C0%2C0%2C0%2C1.2%2C0v-3.485A.6.6%2C0%2C0%2C0%2C512.282%2C204.842Zm-6.1%2C10.455a.6.6%2C0%2C0%2C0-.6.6v.871a.6.6%2C0%2C1%2C0%2C1.2%2C0V215.9A.6.6%2C0%2C0%2C0%2C506.183%2C215.3Zm0-18.3a.6.6%2C0%2C0%2C0-.6.6v.871a.6.6%2C0%2C1%2C0%2C1.2%2C0V197.6A.6.6%2C0%2C0%2C0%2C506.183%2C197Z%22%20transform%3D%22translate%28445.817%20879.817%29%22%20fill%3D%22url%28%23a%29%22/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+  }
+}
+
+ul {
+  right: 50px;
+  position: absolute;
+  list-style: none;
+}
+
+.title-cont {
+  h2 {
+    &.section-page {
+      text-transform: uppercase;
+      font-size: 32px;
+      font-weight: bold;
+      color: #000000;
+      line-height: 50px;
+    }
+
+    b {
+      color: #eb1940;
+    }
+  }
+
+  hr {
+    width: 30px;
+    height: 1px;
+    border-color: #eb1940;
+    float: left;
+  }
+}
+
+.button {
+  margin-top: 50px;
+
+  a {
+    font-size: 16px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+    padding: 13px 7px 13px 20px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    background-image: -webkit-gradient(linear, left top, right top, from(#31559a), to(#e41b40));
+    background-image: linear-gradient(to right, #31559a, #e41b40);
+    svg {
+      border-left: 1px solid #ffffff;
+      width: 44px;
+      margin-left: 10px;
+      height: 13px;
+      padding: 2px 0;
+    }
+  }
+}
+
+.content {
+  margin-top: 100px;
+
+  p {
+    display: block;
+    font-size: 16px;
+    // width: 50%;
+    margin-bottom: 20px;
+  }
+}
+
+.rect1 {
+  height: 325px;
+  position: absolute;
+  width: 35px;
+  margin-left: 234px;
+  background-image: linear-gradient(to top, #31559a, #e41b40);
+}
+
+.rect2 {
+  height: 222px;
+  position: absolute;
+  width: 32px;
+  background-image: linear-gradient(to top, #31559a, #e41b40);
+  right: 231px;
+  margin-top: 268px;
+}
+
+@media (min-width: 1246px) and (max-width: 1630px) {
+  .limit {
+    padding-right: 160px;
+    padding-left: 160px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1245px) {
+  .limit {
+    padding-right: 190px;
+    padding-left: 220px;
+  }
+}
+
+@media (max-width: 991px) {
+  .img1 {
+    display: none;
+  }
+
+  .img2 {
+    display: none;
+  }
+
+  .content {
+    p {
+      width: 80%;
+    }
+  }
+
+  .title-cont {
+    hr {
+      height: 3px;
+      background: #eb1940;
+    }
+  }
+
+  .button {
+    margin-bottom: 50px;
+  }
+
+  ul {
+    right: 0px;
+    position: absolute;
+    list-style: none;
+    top: 25px;
+  }
+
+  .icon-size {
+    height: 45px;
+    width: 45px;
+    background-size: contain;
+  }
+
+  .button {
+    a {
+      font-size: 14px;
+      padding: 10px 7px 10px 8px;
+    }
+  }
+
+  .rect1 {
+    margin-left: 0px;
+    height: 222px;
+  }
+
+  .rect2 {
+    right: 0;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 1630px) and (max-width: 1720px) {
+  .limit {
+    padding-left: 100px;
+  }
+}
+
+@media (min-width: 1246px) and (max-width: 1300px) {
+  .limit {
+    padding-left: 230px;
+  }
+}
+
+@media (min-width: 1246px) and (max-width: 1630px) {
+  .rect1 {
+    margin-left: 233px;
+  }
+
+  .rect2 {
+    right: 230px;
+  }
+}
+
+@media (min-width: 1301px) and (max-width: 1380px) {
+  .limit {
+    padding-left: 250px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1245px) {
+  .rect1 {
+    margin-left: 233px;
+  }
+
+  .rect2 {
+    right: 230px;
+  }
+
+  .limit {
+    padding-left: 280px;
+  }
+}
+
+@media (min-width: 451px) and (max-width: 767px) {
+  .limit {
+    padding-left: 50px;
+  }
+}
+
+@media (max-width: 450px) {
+  .limit {
+    padding-left: 20px;
+  }
+
+  .rect1 {
+    width: 25px;
+  }
+
+  .rect2 {
+    width: 25px;
+  }
+}
+
+.principal-div{
+  position: relative;
+  height: 835px;
+
+  @media (max-width: 343px) {
+    height: 910px !important;
+  }
+}

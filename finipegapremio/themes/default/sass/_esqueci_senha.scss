@@ -1,0 +1,71 @@
+.esqueci-senha {
+  button {
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 18px;
+    padding: 18px 60px;
+    border: 0;
+    border-radius: 25px;
+    float: right;
+    display: block;
+    color: #ffffff;
+    background: #e33f4b;
+    outline: none;
+    margin-top: 40px;
+    margin-bottom: 100px;
+
+    @media only screen and (max-width: 991px) {
+        margin: 0 auto;
+        float: inherit;
+        left: 0;
+        right: 0;
+        margin-top: 50px;
+      }
+  }
+
+  .arrow.senha {
+    @media only screen and (max-width: 991px) {
+      left: 0px;
+    }
+  }
+
+  label {
+    font-family: $font-pluto-cond;
+    font-weight: bold;
+    color: #22397d;
+    font-size: 18px;
+  }
+
+  input {
+    background: transparent;
+    border-width: 0px 0px 2px 0px;
+    border-color: #272f72;
+    border-style: solid;
+    border-radius: 0;
+    box-shadow: none;
+    color: #272f72;
+  }
+
+  .form-control:focus {
+    border-color: #272f72;
+    box-shadow: none;
+  }
+
+  .erro {
+    float: right;
+    color: #a94442;
+  }
+
+  span {
+    font-family: $font-pluto-cond;
+    font-weight: 500;
+    font-size: 18px;
+    color: #272f72;
+
+    @media only screen and (max-width: 991px) {
+      margin-bottom: 50px;
+      display: block;
+      padding-left: 12px;
+    }
+  }
+}

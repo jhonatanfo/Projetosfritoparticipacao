@@ -1,0 +1,27 @@
+<app-header [titleHeader]="appTitle" [profImg]="profilePic"></app-header>
+
+<div class="pagamentos">
+    <ngx-slick-carousel class="carousel " #slickModal="slick-carousel" [config]="slideConfig">
+        <div ngxSlickItem *ngFor="let slide of slides" class="slide">
+            
+            <img src="{{ slide.img }}" alt="" width="100%">
+            
+            <h2>{{slide.titulo}}</h2>
+            
+            <p [innerHTML]="slide.texto"></p>
+            
+            <div class="box-button">
+                <button *ngIf="slide.continuar1" (click)="slickModal.slickGoTo(1)">{{slide.continuar1}}</button>
+                
+                <a routerLink="/cadastrar">
+                    <button *ngIf="slide.continuar2">{{slide.continuar2}}</button>
+                </a>
+
+                <a routerLink="/cadastrar">
+                    <button class="pular" *ngIf="slide.pular">{{slide.pular}}</button>     
+                </a>
+            </div>
+
+        </div>
+    </ngx-slick-carousel>
+</div>

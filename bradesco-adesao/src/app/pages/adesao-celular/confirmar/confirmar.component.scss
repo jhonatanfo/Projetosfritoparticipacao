@@ -1,0 +1,96 @@
+h1 {
+  margin-top: 40px;
+  margin-left: 16px;
+  margin-right: 16px;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.36;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000000;
+}
+
+.content {
+  margin-left: 16px;
+  margin-top: 40px;
+  margin-right: 16px;
+
+  p {
+    font-size: 16px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #6d6d71;
+
+    b {
+      font-weight: 600;
+      color: #000000;
+    }
+  }
+
+  span {
+    margin-top: 64px;
+    margin-bottom: 50px;
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.5;
+    letter-spacing: normal;
+    text-align: left;
+    color: #3a68fa;
+  }
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 25px;
+  width: 25px;
+  float: left;
+  margin-top: 12px;
+}
+
+input#input_1_0 + label {
+  background-image: url("../../../../assets/images/check.svg");
+}
+
+input#input_1_0:checked + label {
+  background-image: url("../../../../assets/images/checked.svg");
+}
+
+.check {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  padding-bottom: 25px;
+  padding-top: 25px;
+  border-color: #c7c9cc;
+  margin-bottom: 72px;
+
+  p {
+    font-size: 14px;
+    font-weight: 500;
+    display: block;
+    padding-top: 2px;
+    padding-left: 35px;
+  }
+}
+
+.success {
+  background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20width%3D%2248%22%20height%3D%2248%22%20viewBox%3D%220%200%2048%2048%22%3E%3Cdefs%3E%3CclipPath%20id%3D%22a%22%3E%3Cpath%20d%3D%22M28-4A24%2C24%2C0%2C0%2C0%2C52-28%2C24%2C24%2C0%2C0%2C0%2C28-52%2C24%2C24%2C0%2C0%2C0%2C4-28%2C24%2C24%2C0%2C0%2C0%2C28-4Z%22%20fill%3D%22none%22%20clip-rule%3D%22evenodd%22/%3E%3C/clipPath%3E%3CclipPath%20id%3D%22b%22%3E%3Cpath%20d%3D%22M-152%2C45H208V-595H-152Z%22%20fill%3D%22none%22/%3E%3C/clipPath%3E%3C/defs%3E%3Cg%20transform%3D%22translate%28-5446%206668%29%22%3E%3Cg%20transform%3D%22translate%285442%20-6616%29%22%20clip-path%3D%22url%28%23a%29%22%3E%3Cg%20clip-path%3D%22url%28%23b%29%22%3E%3Cpath%20d%3D%22M-1-57H57V1H-1Z%22%20fill%3D%22%230acc55%22/%3E%3C/g%3E%3C/g%3E%3Cg%20transform%3D%22translate%285459%20-6651%29%22%3E%3Cg%20transform%3D%22translate%280%200%29%22%3E%3Cpath%20d%3D%22M0%2C7.164l7.079%2C6.9L21.8%2C0%22%20fill%3D%22none%22%20stroke%3D%22%23fff%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%221.5%22/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  display: block;
+  height: 52px;
+  width: 52px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
